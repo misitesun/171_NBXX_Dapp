@@ -1,0 +1,51 @@
+@for $i from 1 through 10 {
+	.ani-#{$i} {
+		animation-duration: calc($i / 10) + s;
+	}
+    .ani-delay-#{$i} {
+		animation-delay: calc($i / 10) + s;
+	}
+    .opc-#{$i} {
+		opacity: calc($i / 10);
+	}
+    .bold-#{$i} {
+		font-weight: calc($i * 100);
+	}
+}
+
+@for $i from 0 through 200 {
+    @if $i % 2 == 0 or $i % 5 == 0 {
+        .size-#{$i} {
+            font-size: $i + px;
+        }
+
+        .img-#{$i} {
+            width: $i + px;
+            height: $i + px;
+        }
+
+        .lh-#{$i} {
+            line-height: $i + px;
+        }
+
+        @each $short,
+        $long in l left,
+        t top,
+        r right,
+        b bottom {
+            .m#{$short}-#{$i} {
+                margin-#{$long}: $i + px;
+            }
+
+            .p#{$short}-#{$i} {
+                padding-#{$long}: $i + px;
+            }
+        }
+    }
+    @if $i % 5 == 0 {
+        .gap-#{$i} {
+            width: 100%;
+            height: $i + px;
+        }
+    }
+}

@@ -1,0 +1,212 @@
+.segmented-tabs {
+    position: relative;
+    width: 100%;
+    gap: 20px;
+
+    &__filter {
+        position: absolute;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+    }
+
+    &__goo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+
+        &--active { opacity: 1; }
+    }
+
+    &__goo-pill {
+        position: absolute;
+        inset: var(--gooey-padding);
+        border-radius: 999px;
+        background: var(--app-action-gradient);
+        opacity: 0;
+        transform: scale(.3, .55);
+    }
+
+    &__goo-particles {
+        position: absolute;
+        inset: 0;
+        overflow: visible;
+    }
+
+    &__goo--active &__goo-pill {
+        animation:
+            segmented-tabs-goo-grow var(--gooey-grow-duration) cubic-bezier(.22, .6, .36, 1) both,
+            segmented-tabs-goo-pill var(--gooey-total-duration) linear both;
+    }
+
+    &__goo-particle,
+    &__goo-point {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 999px;
+        transform-origin: center;
+    }
+
+    &__goo-particle {
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+        opacity: 0;
+    }
+
+    &__goo-point {
+        background: var(--app-action-gradient);
+        opacity: 0;
+    }
+
+    &__goo--active &__goo-particle {
+        animation: segmented-tabs-goo-particle var(--gooey-duration) linear both;
+        animation-delay: var(--gooey-delay);
+    }
+
+    &__goo--active &__goo-point {
+        animation: segmented-tabs-goo-point var(--gooey-duration) ease-out both;
+        animation-delay: var(--gooey-delay);
+    }
+
+    &__item--forming::before {
+        animation:
+            segmented-tabs-goo-grow var(--gooey-grow-duration) cubic-bezier(.22, .6, .36, 1) both,
+            segmented-tabs-goo-surface var(--gooey-total-duration) linear both;
+    }
+
+    &__item--forming > span {
+        animation: segmented-tabs-goo-label var(--gooey-total-duration) ease both;
+    }
+
+    &__item {
+        position: relative;
+        flex: 1;
+        min-width: 0;
+        min-height: 68px;
+        padding: 10px 20px;
+        overflow: hidden;
+        border-radius: 999px;
+        background: var(--app-tab-bg);
+        cursor: pointer;
+        transition: color calc(var(--gooey-total-duration) * .2) ease, transform 140ms ease-out;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            border-radius: inherit;
+            background: var(--app-action-gradient);
+            opacity: 0;
+            transition: opacity calc(var(--gooey-total-duration) * .2) ease;
+            pointer-events: none;
+        }
+
+        span {
+            position: relative;
+            z-index: 2;
+        }
+
+        &--active::before {
+            opacity: 1;
+        }
+
+        &:active:not(:disabled) {
+            transform: scale(.97);
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--app-cyan);
+            outline-offset: 4px;
+        }
+
+        &:disabled {
+            cursor: default;
+            opacity: .5;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        &__goo { display: none; }
+
+        &__item,
+        &__item::before,
+        &__item > span {
+            transition: none;
+            animation: none;
+        }
+
+        &__item:active:not(:disabled) {
+            transform: none;
+        }
+    }
+}
+
+@keyframes segmented-tabs-goo-grow {
+    from { transform: scale(.3, .55); }
+    to { transform: scale(1); }
+}
+
+@keyframes segmented-tabs-goo-pill {
+    0% { opacity: 0; }
+    12%, 78% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes segmented-tabs-goo-surface {
+    0% { opacity: 0; }
+    12%, 100% { opacity: 1; }
+}
+
+@keyframes segmented-tabs-goo-label {
+    0%, 16% { color: var(--app-text); }
+    45%, 100% { color: inherit; }
+}
+
+@keyframes segmented-tabs-goo-particle {
+    0% {
+        opacity: 0;
+        transform: translate3d(var(--gooey-start-x), var(--gooey-start-y), 0) rotate(0deg);
+    }
+
+    10%, 90% { opacity: 1; }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(var(--gooey-end-x), var(--gooey-end-y), 0) rotate(var(--gooey-rotation));
+    }
+}
+
+@keyframes segmented-tabs-goo-point {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    16% {
+        opacity: 1;
+        transform: scale(var(--gooey-scale));
+    }
+
+    45% {
+        opacity: 1;
+        transform: scale(var(--gooey-scale));
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(var(--gooey-scale), var(--gooey-small-scale));
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

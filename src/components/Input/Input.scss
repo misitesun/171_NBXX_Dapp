@@ -1,0 +1,43 @@
+.app-input {
+    position: relative;
+    min-height: 98px;
+    padding: 0 30px;
+    gap: 20px;
+    border: 1px solid var(--app-input-border-color, var(--app-border-strong));
+    border-radius: 24px;
+    background: var(--app-input-background, var(--app-card-bg));
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: -1px;
+        padding: 1px;
+        border-radius: inherit;
+        background: var(--app-action-gradient);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 180ms ease;
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+    &--focus-default:focus-within {
+        border-color: var(--app-cyan);
+        box-shadow: 0 0 0 2px var(--app-focus-ring);
+    }
+    &--focus-gradient:focus-within {
+        border-color: transparent;
+        box-shadow: 0 0 0 2px var(--app-focus-ring);
+    }
+    &--focus-gradient:focus-within::before { opacity: 1; }
+    input { width: 100%; min-width: 0; flex: 1; font-size: 28px; padding: 24px 0; }
+    input::placeholder { color: var(--app-text-inactive); }
+    &__prefix, &__suffix { flex: none; }
+    &__prefix img, &__suffix img { width: 48px; height: 48px; }
+    &--disabled { opacity: .5; }
+    @media (prefers-reduced-motion: reduce) {
+        transition: none;
+        &::before { transition: none; }
+    }
+}

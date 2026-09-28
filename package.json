@@ -1,0 +1,53 @@
+{
+    "name": "@jcy/template-react",
+    "version": "0.0.0",
+    "type": "module",
+    "packageManager": "pnpm@10.28.2",
+    "scripts": {
+        "preinstall": "node scripts/ensure-pnpm.mjs",
+        "env:init": "node scripts/create-env-files.mjs",
+        "favicon:generate": "node scripts/create-favicon-from-logo.mjs",
+        "empty:asset": "node scripts/update-empty-asset.mjs",
+        "create:pack": "node scripts/pack-create-template.mjs",
+        "create:local": "pnpm create:pack && pnpm --dir packages/create-template-react pack",
+        "predev": "node scripts/ensure-pnpm.mjs",
+        "dev": "vite --host 0.0.0.0",
+        "prebuild": "node scripts/ensure-pnpm.mjs && pnpm verify && node scripts/verify-brand-assets.mjs",
+        "build": "tsc -b && vite build",
+        "prelint": "node scripts/ensure-pnpm.mjs",
+        "lint:ai-skills": "node scripts/validate-ai-skills.mjs",
+        "lint:module-docs": "node scripts/validate-module-docs.mjs",
+        "lint:page-layout": "node scripts/validate-page-layout.mjs",
+        "lint": "oxlint && pnpm lint:ai-skills && pnpm lint:module-docs && pnpm lint:page-layout",
+        "pretest": "node scripts/ensure-pnpm.mjs",
+        "test": "node --test tests/*.test.mjs",
+        "verify": "pnpm lint && pnpm test",
+        "prepreview": "node scripts/ensure-pnpm.mjs",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@metamask/detect-provider": "^2.0.0",
+        "animate.css": "^4.1.1",
+        "axios": "^1.18.1",
+        "i18next": "^26.3.6",
+        "react": "^19.2.7",
+        "react-dom": "^19.2.7",
+        "react-i18next": "^17.0.9",
+        "react-router": "^8.2.0",
+        "swiper": "^14.0.5",
+        "viem": "^2.55.1",
+        "zustand": "^5.0.14"
+    },
+    "devDependencies": {
+        "@types/node": "^24.13.2",
+        "@types/react": "^19.2.17",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^6.0.3",
+        "esbuild": "^0.28.1",
+        "oxlint": "^1.73.0",
+        "postcss-px-to-viewport-8-plugin": "^1.2.5",
+        "sass-embedded": "^1.100.0",
+        "typescript": "~6.0.2",
+        "vite": "^8.1.1"
+    }
+}

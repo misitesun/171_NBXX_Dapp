@@ -1,0 +1,119 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "plugins": ["react", "typescript", "oxc"],
+    "rules": {
+        "react/rules-of-hooks": "error",
+        "react/only-export-components": ["warn", { "allowConstantExport": true }],
+        "typescript/no-explicit-any": "error",
+        "typescript/no-non-null-assertion": "error",
+        "no-restricted-globals": [
+            "error",
+            {
+                "globals": [
+                    {
+                        "name": "localStorage",
+                        "message": "Use src/services/storage instead of accessing browser storage directly."
+                    },
+                    {
+                        "name": "sessionStorage",
+                        "message": "Use src/services/storage instead of accessing browser storage directly."
+                    },
+                    {
+                        "name": "fetch",
+                        "message": "Use src/services/http so authentication, language and error handling stay centralized."
+                    }
+                ],
+                "checkGlobalObject": true
+            }
+        ],
+        "no-restricted-properties": [
+            "error",
+            {
+                "object": "window",
+                "property": "ethereum",
+                "message": "Use the DApp provider service instead of accessing the injected wallet directly."
+            },
+            {
+                "object": "navigator",
+                "property": "clipboard",
+                "message": "Use src/shared/clipboard instead of the native Clipboard API."
+            },
+            {
+                "object": "document",
+                "property": "execCommand",
+                "message": "Use src/shared/clipboard instead of document.execCommand."
+            }
+        ],
+        "no-restricted-imports": [
+            "error",
+            {
+                "paths": [
+                    {
+                        "name": "axios",
+                        "message": "Use src/services/http instead of creating a second HTTP client."
+                    },
+                    {
+                        "name": "viem",
+                        "message": "Use src/services/dapp or src/services/contracts instead of direct chain access."
+                    },
+                    {
+                        "name": "@metamask/detect-provider",
+                        "message": "Use src/services/dapp/provider instead of detecting a wallet in page code."
+                    }
+                ],
+                "patterns": [
+                    {
+                        "group": ["viem/*"],
+                        "message": "Use src/services/dapp or src/services/contracts instead of direct chain access."
+                    }
+                ]
+            }
+        ]
+    },
+    "overrides": [
+        {
+            "files": ["src/services/http/**/*.ts", "src/services/http/**/*.tsx"],
+            "rules": {
+                "no-restricted-imports": "off"
+            }
+        },
+        {
+            "files": ["src/services/storage/**/*.ts", "src/services/storage/**/*.tsx"],
+            "rules": {
+                "no-restricted-globals": "off"
+            }
+        },
+        {
+            "files": ["src/services/dapp/**/*.ts", "src/services/dapp/**/*.tsx"],
+            "rules": {
+                "no-restricted-imports": "off"
+            }
+        },
+        {
+            "files": ["src/services/dapp/provider.ts", "src/services/platform/runtime.ts"],
+            "rules": {
+                "no-restricted-properties": "off"
+            }
+        },
+        {
+            "files": ["src/shared/clipboard/**/*.ts", "src/shared/clipboard/**/*.tsx"],
+            "rules": {
+                "no-restricted-properties": "off"
+            }
+        },
+        {
+            "files": ["src/services/dapp/batch.ts", "src/services/dapp/contract.ts"],
+            "rules": {
+                "typescript/no-explicit-any": "off"
+            }
+        },
+        {
+            "files": ["tests/**/*.mjs"],
+            "rules": {
+                "no-restricted-globals": "off",
+                "no-restricted-imports": "off",
+                "no-restricted-properties": "off"
+            }
+        }
+    ]
+}

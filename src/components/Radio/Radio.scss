@@ -1,0 +1,12 @@
+.app-radio {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    flex: none;
+    border-radius: 50%;
+    background: url('@/assets/common/radio-unchecked.svg') center / 100% 100% no-repeat;
+    cursor: pointer;
+    &:checked { background-image: url('@/assets/common/radio-checked.svg'); }
+    &:focus-visible { outline: 2px solid var(--app-cyan); outline-offset: 5px; }
+    &:disabled { opacity: .5; cursor: default; }
+}

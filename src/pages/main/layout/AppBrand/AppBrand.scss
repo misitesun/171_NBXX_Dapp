@@ -1,0 +1,9 @@
+.app-brand {
+    cursor: pointer;
+
+    &__logo {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
+}

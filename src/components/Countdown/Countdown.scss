@@ -1,0 +1,7 @@
+.countdown {
+    color: var(--app-text);
+    &__digits { margin-top: 28px; color: var(--app-pink); font-variant-numeric: tabular-nums; }
+    &__digit { width: 88px; height: 88px; border: 1px solid currentcolor; border-radius: 16px; background: var(--app-card-bg); font-size: 48px; font-weight: 500; }
+    &__separator { width: 28px; text-align: center; font-size: 48px; }
+    &--cyan &__digits { color: var(--app-cyan); }
+}

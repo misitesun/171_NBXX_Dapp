@@ -1,0 +1,9 @@
+.icon-showcase {
+    min-height: 100%;
+
+    &-item {
+        min-height: 150px;
+        border-radius: 20px;
+        background-color: var(--app-box-bg);
+    }
+}

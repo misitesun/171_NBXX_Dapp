@@ -1,0 +1,126 @@
+#!/usr/bin/env node
+
+import {
+    existsSync,
+    mkdirSync,
+    readdirSync,
+} from 'node:fs'
+import { spawnSync } from 'node:child_process'
+import {
+    dirname,
+    join,
+    resolve,
+} from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const packageDir = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+const archivePath = join(packageDir, 'template.tgz')
+
+function printHelp() {
+    console.log(`
+Usage:
+  create-template-react [target-directory]
+
+Examples:
+  pnpm dlx @jcy/create-template-react .
+  pnpm dlx @jcy/create-template-react my-app
+`.trim())
+}
+
+function fail(message) {
+    console.error(message)
+    process.exit(1)
+}
+
+function parseTargetArg(args) {
+    if (args.includes('--help') || args.includes('-h')) {
+        printHelp()
+        process.exit(0)
+    }
+
+    const targetArg = args.find((arg) => !arg.startsWith('-')) ?? '.'
+
+    return resolve(process.cwd(), targetArg)
+}
+
+function isEffectivelyEmptyDirectory(directory) {
+    if (!existsSync(directory)) return true
+
+    return readdirSync(directory)
+        .filter((name) => name !== '.DS_Store')
+        .length === 0
+}
+
+function run(command, args, options = {}) {
+    const result = spawnSync(command, args, {
+        encoding: 'utf8',
+        ...options,
+    })
+
+    if (result.status !== 0) {
+        fail(result.stderr || result.stdout || `${command} failed`)
+    }
+
+    return result
+}
+
+function extractTemplate(targetDir) {
+    mkdirSync(targetDir, {
+        recursive: true,
+    })
+
+    run('tar', [
+        '-xzf',
+        archivePath,
+        '-C',
+        targetDir,
+        '--strip-components',
+        '1',
+    ], {
+        stdio: 'inherit',
+    })
+}
+
+function initializeEnvFiles(targetDir) {
+    const envScript = join(targetDir, 'scripts/create-env-files.mjs')
+
+    if (!existsSync(envScript)) return
+
+    run(process.execPath, [
+        envScript,
+    ], {
+        cwd: targetDir,
+        stdio: 'inherit',
+    })
+}
+
+function printNextSteps(targetDir) {
+    const relativeTarget = targetDir === process.cwd()
+        ? '.'
+        : targetDir
+
+    console.log(`
+React H5 DApp template created at ${relativeTarget}
+
+Next steps:
+  pnpm install
+  pnpm dev
+
+After the dev server is ready, continue with PROJECT_SETUP.md and PROJECT_WORKFLOW.md.
+开发服务启动后，继续按 PROJECT_SETUP.md 和 PROJECT_WORKFLOW.md 初始化真实项目。
+`.trim())
+}
+
+const targetDir = parseTargetArg(process.argv.slice(2))
+
+if (!existsSync(archivePath)) {
+    fail('Template archive is missing. Please rebuild the create package before publishing.')
+}
+
+if (!isEffectivelyEmptyDirectory(targetDir)) {
+    fail(`Target directory is not empty: ${targetDir}`)
+}
+
+extractTemplate(targetDir)
+initializeEnvFiles(targetDir)
+printNextSteps(targetDir)

@@ -1,0 +1,17 @@
+export const SHOWCASE_ROUTE_PATH = {
+    home: '/showcase',
+    components: '/showcase/components',
+    styles: '/showcase/styles',
+    gradientText: '/showcase/components/gradient-text',
+    popup: '/showcase/components/popup',
+    picker: '/showcase/components/picker',
+    dropdown: '/showcase/components/dropdown',
+    icon: '/showcase/components/icon',
+    empty: '/showcase/components/empty',
+    languageSwitch: '/showcase/components/language-switch',
+    contractLoading: '/showcase/components/contract-loading',
+    styleLayout: '/showcase/styles/layout',
+    styleText: '/showcase/styles/text',
+    styleSpacing: '/showcase/styles/spacing',
+    styleButton: '/showcase/styles/button',
+} as const

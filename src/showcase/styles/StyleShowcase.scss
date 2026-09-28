@@ -1,0 +1,50 @@
+.style-showcase-demo {
+    &-box {
+        min-height: 150px;
+        background-color: var(--app-box-bg);
+        border-radius: 16px;
+    }
+
+    &-dot {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: var(--app-color);
+        color: var(--app-btn-color);
+    }
+
+    &-block {
+        min-height: 80px;
+        border-radius: 16px;
+        background-color: var(--app-color);
+        color: var(--app-btn-color);
+    }
+
+    &-grid-item {
+        min-height: 88px;
+        border-radius: 16px;
+        background-color: var(--app-box-bg);
+    }
+
+    &-frame {
+        border: 1px solid #FFFFFF20;
+        border-radius: 16px;
+    }
+
+    &-scroll-inner {
+        width: 900px;
+    }
+
+    &-text-sample {
+        min-width: 190px;
+        min-height: 190px;
+        border-radius: 16px;
+        background-color: var(--app-box-bg);
+        vertical-align: top;
+    }
+
+    &-gap {
+        background-color: var(--app-box-bg);
+        border-radius: 16px;
+    }
+}

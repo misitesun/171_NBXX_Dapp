@@ -1,0 +1,16 @@
+.grid { display: grid; }
+.inline-grid { display: inline-grid; }
+
+@for $i from 1 through 10 {
+    .grid-#{$i} { grid-template-columns: repeat($i, minmax(0, 1fr)); }
+}
+
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); }
+
+@for $i from 0 through 50 {
+    @if $i % 2 == 0 or $i % 5 == 0 {
+        .gap-#{$i} { gap: #{$i}px; }
+        .row-gap-#{$i} { row-gap: #{$i}px; }
+        .column-gap-#{$i} { column-gap: #{$i}px; }
+    }
+}

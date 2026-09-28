@@ -1,0 +1,67 @@
+.picker {
+    width: 100vw;
+    padding: 40px 40px calc(40px + env(safe-area-inset-bottom));
+    border-radius: 40px 40px 0 0;
+    background-color: var(--app-card-bg);
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
+    &__title {
+        flex: 1;
+    }
+
+    &__close {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+        padding: 0;
+        border: 0;
+        color: inherit;
+        background: transparent;
+    }
+
+    &__swiper {
+        width: 670px;
+        height: 500px;
+    }
+
+    &__option {
+        width: 670px;
+        height: 80px;
+        border-radius: 20px;
+        text-align: center;
+        line-height: 80px;
+        font-size: 28px;
+        opacity: 0.5;
+    }
+
+    .swiper-slide-active {
+        background-color: var(--app-box-bg);
+        opacity: 1;
+    }
+
+    &__swiper--empty-current {
+        .swiper-slide-active {
+            background-color: transparent;
+            opacity: 0.5;
+        }
+    }
+
+    &__footer {
+        margin-top: 60px;
+    }
+
+    &__confirm {
+        @include full-button();
+
+        &:disabled {
+            opacity: 0.5;
+        }
+    }
+}

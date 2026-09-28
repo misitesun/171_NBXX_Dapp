@@ -1,0 +1,130 @@
+@use '../mixins' as *;
+
+.container{
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.tl{
+    text-align: left;
+}
+.tc{
+    text-align: center;
+}
+.tr{
+    text-align: right;
+}
+.bold{
+    font-weight: bold;
+}
+.rel{
+    position: relative;
+    z-index: 1;
+}
+.ani{
+    transition: all 0.3s;
+}
+.backdrop{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+.word-break{
+    word-break: break-all;
+    word-wrap: break-word;
+    line-break: anywhere;
+}
+.word-nowrap{
+    text-wrap: nowrap;
+}
+.word-ellipsis-1{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.word-ellipsis-2{
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical !important;
+}
+.word-ellipsis-3{
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical !important;
+}
+.full-btn{
+    @include full-button(88px, 20px);
+}
+.auto-btn{
+    @include auto-button();
+}
+
+@property --orbit-border-progress {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+.orbit-border {
+    --orbit-border-start-angle: 0deg;
+    --orbit-border-direction: normal;
+    --orbit-border-speed: 5s;
+    --orbit-border-delay: 0s;
+    --orbit-border-width: 1px;
+    --orbit-border-color-start: var(--app-cyan);
+    --orbit-border-color-peak: var(--app-violet);
+    --orbit-border-glow: 6px;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.orbit-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border-radius: inherit;
+    padding: var(--orbit-border-width);
+    background: conic-gradient(
+        from calc(var(--orbit-border-start-angle) + var(--orbit-border-progress) - 50deg),
+        transparent 0deg,
+        var(--orbit-border-color-start) 22deg,
+        var(--orbit-border-color-peak) 50deg,
+        var(--orbit-border-color-start) 78deg,
+        transparent 100deg,
+        transparent 360deg
+    );
+    filter: drop-shadow(0 0 var(--orbit-border-glow) var(--orbit-border-color-peak));
+    animation-name: orbit-border-spin;
+    animation-duration: var(--orbit-border-speed);
+    animation-delay: var(--orbit-border-delay);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: var(--orbit-border-direction);
+    pointer-events: none;
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .orbit-border::before {
+        animation: none;
+    }
+}
+
+@keyframes orbit-border-spin {
+    to { --orbit-border-progress: 360deg; }
+}

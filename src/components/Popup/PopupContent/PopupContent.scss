@@ -1,0 +1,28 @@
+.popup-content {
+    max-width: 100%;
+    max-height: 100%;
+
+    &--center {
+        width: 670px;
+        padding: 40px 30px;
+        border-radius: 30px;
+        background-color: var(--app-card-bg);
+    }
+
+    &--bottom {
+        width: 100%;
+        padding: 40px 30px;
+        border-radius: 30px;
+        background-color: var(--app-card-bg);
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        flex: 1;
+    }
+}

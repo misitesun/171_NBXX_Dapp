@@ -1,0 +1,4 @@
+# Input
+Controlled/native input wrapper with optional prefix and suffix slots. Native props, ref, name, id, inputMode and accessibility attributes are forwarded to the input. Supply an associated external label or accessible name. All business text inputs use the shared action-gradient focus border by default. `focusVariant="default"` remains an explicit compatibility opt-out for the previous cyan border. Set `--app-input-background` and `--app-input-border-color` to match a page-specific resting surface without overriding the independent gradient focus ring. Disabled and reduced-motion states are supported.
+
+带前置与尾部插槽的原生输入框，业务文本输入默认统一使用紫—蓝—青渐变焦点边框；仅兼容旧视觉时显式传入 `focusVariant="default"`。页面可通过 `--app-input-background` 和 `--app-input-border-color` 设置静止状态的底色与边框，不会覆盖独立的渐变聚焦描边。数值合法性由业务调用方决定，不在公共组件内猜测金额规则。

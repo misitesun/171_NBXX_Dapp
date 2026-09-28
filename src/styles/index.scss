@@ -1,0 +1,88 @@
+@use './color';
+@use './animate';
+@use './layout/device';
+@use './layout/flex';
+@use './layout/grid';
+@use './common/index';
+@use './common/common';
+@use './common//base.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body {
+    font-family: Inter, system-ui, Avenir, 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+        'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    user-select: text;
+    -webkit-user-select: text;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    resize: none;
+}
+
+img,
+svg,
+video,
+canvas {
+    display: block;
+    max-width: 100%;
+}

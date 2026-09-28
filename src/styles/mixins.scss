@@ -1,0 +1,80 @@
+@mixin gradient-card(
+    $radius,
+    $bg: linear-gradient(180deg, rgba(#CB78FD, 0.2) 0%, rgba(#B1E7FE, 0.2) 50%, rgba(#2F6CFE, 0.2) 100%),
+    $border: linear-gradient(180deg, #CB78FD 0%, #B1E7FE 50%, #2F6CFE 100%),
+    $borderWidth: 1px
+) {
+    border-radius: $radius;
+    border: $borderWidth solid transparent;
+    position: relative;
+    background: $bg padding-box, $border border-box;
+}
+
+@mixin app-popup-surface($radius) {
+    @include gradient-card(
+        $radius,
+        linear-gradient(180deg, #2F1F53 0%, #1A1948 100%),
+        linear-gradient(180deg, #F934FF 0%, #5039FE 50%, #41DEFF 100%),
+        1px
+    );
+}
+
+@mixin gradient-word(
+    $bg: linear-gradient(to right,#EFB152, #EFCD80, #EFB152)
+){
+    display: inline-block;
+    background: $bg;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+@mixin hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+@mixin calc-vh($px, $property: height) {
+    #{$property}: calc(100vh - #{$px}px);
+    #{$property}: calc(100dvh - #{$px}px);
+}
+
+@mixin full-button(
+    $height: 80px,
+    $radius: 40px,
+    $color: var(--app-btn-color),
+    $bg: var(--app-color)
+){
+    width: 100%;
+    height: $height;
+    border-radius: $radius;
+    color: $color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bg;
+}
+
+@mixin auto-button(
+    $height: 52px,
+    $radius: 26px,
+    $padding: 20px,
+    $color: var(--app-btn-color),
+    $bg: var(--app-color)
+){
+    height: $height;
+    border-radius: $radius;
+    padding: 0 $padding;
+    color: $color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $bg;
+}

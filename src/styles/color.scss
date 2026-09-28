@@ -1,0 +1,54 @@
+:root {
+    // Sidebar visual tokens; global project theme stays independently configurable.
+    --app-sidebar-bg: #1F0006;
+    --app-sidebar-accent: #DC143C;
+    --app-sidebar-wallet-bg: #3A0C15;
+    --app-sidebar-connected: #00FF48;
+
+    --app-color: #F934FF;
+    --app-btn-color: #FFFFFF;
+    --app-green: #34B926;
+    --app-red: #F1463D;
+    --app-blue: #1385FF;
+    --app-yellow: #F5C245;
+    --app-pink: #FF44CD;
+    --app-gradient-blue: #008CFF;
+    --app-cyan: #41DEFF;
+    --app-violet: #5039FE;
+    --app-bg: #14133F;
+    --app-text: #FFFFFF;
+    --app-text-secondary: rgb(255 255 255 / 60%);
+    --app-text-muted: rgb(255 255 255 / 50%);
+    --app-text-inactive: rgb(255 255 255 / 40%);
+    --app-text-notice: rgb(255 255 255 / 72%);
+    --app-secondary-header-bg: #14133F;
+    --app-card-bg: rgb(255 255 255 / 10%);
+    --app-box-bg: #24214E;
+    --app-tab-bg: #302E5B;
+    --app-surface-subtle: rgb(255 255 255 / 4%);
+    --app-border-medium: rgb(255 255 255 / 20%);
+    --app-focus-ring: rgb(65 222 255 / 12%);
+    --app-toast-bg: rgb(14 13 40 / 94%);
+    --app-toast-success-bg: rgb(52 185 38 / 50%);
+    --app-toast-error-bg: rgb(241 70 61 / 50%);
+    --app-toast-shadow: 0 12px 40px rgb(0 0 0 / 30%);
+    --app-border: rgb(255 255 255 / 10%);
+    --app-border-strong: rgb(255 255 255 / 40%);
+    --app-header-bg: rgb(20 19 63 / 35%);
+    --app-cyan-soft: rgb(65 222 255 / 20%);
+    --app-text-shadow: 0 4px 10px rgb(0 0 0 / 30%);
+    --app-action-gradient: linear-gradient(90deg, var(--app-color), var(--app-violet) 50%, var(--app-cyan));
+    --app-heading-accent-gradient: linear-gradient(180deg, var(--app-color) 0%, var(--app-violet) 50%, var(--app-cyan) 100%);
+    --app-action-soft-gradient: linear-gradient(90deg, rgb(249 52 255 / 10%), rgb(80 57 254 / 10%) 50%, rgb(65 222 255 / 10%));
+    --app-tabbar-gradient: linear-gradient(180deg, #2D2B6F, #07062F);
+    --app-divider-gradient: linear-gradient(90deg, var(--app-border), var(--app-text), var(--app-border));
+}
+body { background-color: var(--app-bg); color: var(--app-text); }
+input::placeholder { color: var(--app-text-muted); }
+.app-color { color: var(--app-color); }
+.white { color: var(--app-text); }
+.black { color: #000000; }
+.green { color: var(--app-green); }
+.red { color: var(--app-red); }
+.blue { color: var(--app-blue); }
+.yellow { color: var(--app-yellow); }

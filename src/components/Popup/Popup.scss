@@ -1,0 +1,49 @@
+.popup {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    width: 100vw;
+    width: 100dvw;
+    height: 100vh;
+    height: 100dvh;
+
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background: rgb(0 0 0 / 50%);
+        --animate-duration: 0.25s;
+    }
+
+    &__content {
+        --animate-duration: 0.25s;
+    }
+
+    &--center {
+        .popup__overlay {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &--right {
+        .popup__overlay {
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    &--left {
+        .popup__overlay {
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+
+    &--bottom {
+        .popup__overlay {
+            align-items: flex-end;
+            justify-content: center;
+        }
+    }
+}

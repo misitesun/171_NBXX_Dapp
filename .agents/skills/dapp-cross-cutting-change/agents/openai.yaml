@@ -1,0 +1,7 @@
+interface:
+    display_name: "DApp 跨模块变更"
+    short_description: "受控处理共享契约、配置与基础设施改动"
+    default_prompt: "Use $dapp-cross-cutting-change to plan and implement this cross-cutting React H5 DApp change."
+
+policy:
+    allow_implicit_invocation: true

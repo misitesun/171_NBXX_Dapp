@@ -1,0 +1,7 @@
+{
+    "isProjectLogoReady": false,
+    "logoPath": "public/brand/app-logo.png",
+    "faviconPath": "public/favicon.ico",
+    "messageEn": "The current brand assets are React placeholder assets. Replace the project logo before production build.",
+    "messageZh": "当前品牌资源仍是 React 占位资源。正式打包前必须替换项目 logo。"
+}

@@ -1,0 +1,7 @@
+interface:
+    display_name: "DApp 项目联调"
+    short_description: "依据 PHP 与 ABI 契约完成受控的真实项目联调"
+    default_prompt: "Use $dapp-project-integration to integrate this React H5 DApp from confirmed PHP and contract documentation."
+
+policy:
+    allow_implicit_invocation: true

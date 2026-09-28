@@ -1,0 +1,8 @@
+.empty-showcase {
+    min-height: 100%;
+
+    &-box {
+        border-radius: 20px;
+        background-color: var(--app-box-bg);
+    }
+}

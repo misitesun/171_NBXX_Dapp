@@ -1,0 +1,61 @@
+.gradient-text {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    max-width: 100%;
+    min-width: 0;
+    border-radius: 20px;
+    color: var(--app-color);
+
+    &__content, &__border {
+        background-image: var(--gradient-text-image);
+        background-size: var(--gradient-text-size);
+        background-position: var(--gradient-text-start);
+        background-repeat: repeat;
+        animation: gradient-text-flow var(--gradient-text-duration) linear infinite;
+        animation-direction: var(--gradient-text-direction);
+    }
+
+    &__content {
+        position: relative;
+        min-width: 0;
+        overflow-wrap: anywhere;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+    &--border { padding: 8px 16px; }
+
+    &__border {
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        pointer-events: none;
+        // These opaque mask colors cut out the center; they are not visible UI colors.
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    &--pause-on-hover:hover &__content,
+    &--pause-on-hover:hover &__border { animation-play-state: paused; }
+
+    @media (prefers-reduced-motion: reduce) {
+        &__content, &__border { animation: none; }
+    }
+
+    @media (forced-colors: active) {
+        &__content { background: none; color: CanvasText; -webkit-text-fill-color: CanvasText; }
+        &__border { display: none; }
+        &--border { border: 1px solid CanvasText; }
+    }
+}
+
+@keyframes gradient-text-flow {
+    from { background-position: var(--gradient-text-start); }
+    to { background-position: var(--gradient-text-end); }
+}

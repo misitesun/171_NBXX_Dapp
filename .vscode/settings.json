@@ -1,0 +1,10 @@
+{
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "css.styleSheets": [
+        "src/**/*.scss"
+    ],
+    "html-css-class-completion.includeGlobPattern": "src/**/*.{scss,tsx}",
+    "html-css-class-completion.excludeGlobPattern": "node_modules/**"
+}
