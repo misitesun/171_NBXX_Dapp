@@ -1,3 +1,5 @@
+import { translate } from '@/i18n/translate.ts'
+
 export type RelativeTimeValue = string | number | Date | null | undefined
 
 function pad(value: number): string {
@@ -24,7 +26,7 @@ export function formatRelativeTime(
 
     const time = `${pad(date.getHours())}:${pad(date.getMinutes())}`
     if (isSameCalendarDay(date, now)) return time
-    if (isSameCalendarDay(date, yesterday)) return `昨天 ${time}`
+    if (isSameCalendarDay(date, yesterday)) return `${translate('昨天')} ${time}`
 
     const monthAndDay = `${pad(date.getMonth() + 1)}-${pad(date.getDate())}`
     return date.getFullYear() === now.getFullYear()

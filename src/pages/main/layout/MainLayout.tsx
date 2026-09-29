@@ -1,5 +1,6 @@
 import { useState, type ReactNode } from 'react'
 import { Outlet } from 'react-router'
+import { APP_CONFIG } from '@/config'
 
 import {
     DEFAULT_LAYOUT_MENU_TYPE,
@@ -24,7 +25,7 @@ export function MainLayout({
     children,
 }: MainLayoutProps) {
     const [showSidebarMenu, setShowSidebarMenu] = useState(false)
-    const isSidebarLayout = menuType === LAYOUT_MENU_TYPE.sidebar
+    const isSidebarLayout = menuType === LAYOUT_MENU_TYPE.sidebar && APP_CONFIG.sidebarMenuEnabled
     const isTabbarLayout = menuType === LAYOUT_MENU_TYPE.tabbar
     const appLayoutClassName = isTabbarLayout
         ? 'app-layout app-layout--tabbar min-vh-100'

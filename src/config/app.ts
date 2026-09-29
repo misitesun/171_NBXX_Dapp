@@ -34,6 +34,8 @@ export const APP_LOGIN_MODE_OPTIONS = [
 
 export const APP_CONFIG = {
     name: import.meta.env?.VITE_APP_NAME ?? '',
+    brandWordmarkPath: 'brand/nodexx-wordmark.png',
+    showBrandName: false,
     routeBase: '/h5/',
     routerBasename: '/h5',
 
@@ -44,6 +46,7 @@ export const APP_CONFIG = {
     // Project-level layout menu mode. `tabbar` and `sidebar` are mutually exclusive.
     // 项目级 layout 菜单模式，`tabbar` 和 `sidebar` 是互斥关系。
     defaultLayoutMenuType: APP_LAYOUT_MENU_TYPE.sidebar,
+    sidebarMenuEnabled: false as boolean,
 
     // `dapp` only allows wallet login, `hybrid` allows wallet and account login, and `account` only allows account login.
     // `dapp` 仅支持钱包登录，`hybrid` 同时支持钱包和账号登录，`account` 仅支持账号登录。

@@ -52,8 +52,8 @@ It follows the old Vue `CusPicker` behavior: open a bottom popup, slide or tap t
 | --- | --- | --- | --- |
 | `show` | `boolean` | required | Controls whether the picker is visible. |
 | `options` | `PickerOption[]` | required | Option list. |
-| `title` | `ReactNode` | `'请选择'` | Header title. |
-| `confirmText` | `ReactNode` | `'确定'` | Confirm button text. |
+| `title` | `ReactNode` | localized `Please select` | Header title. |
+| `confirmText` | `ReactNode` | localized `OK` | Confirm button text. |
 | `emptyText` | `ReactNode` | `undefined` | Text passed to `Empty` when `options` is empty. |
 | `value` | `number` | `undefined` | Controlled selected index. |
 | `defaultIndex` | `number` | `0` | Initial selected index in uncontrolled mode. |
@@ -66,12 +66,15 @@ It follows the old Vue `CusPicker` behavior: open a bottom popup, slide or tap t
 | `onConfirm` | `(payload) => void` | `undefined` | Called when the confirm button is clicked. |
 | `renderOption` | `(option, index, isActive) => ReactNode` | `undefined` | Custom option renderer. |
 
+Omitted `title` and `confirmText` use the active locale's shared default translations. Explicit props continue to override these defaults.
+省略 `title` 和 `confirmText` 时，默认使用当前语言的通用翻译；显式传入时仍以调用方文案为准。
+
 | 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | `show` | `boolean` | 必传 | 控制选择器是否显示。 |
 | `options` | `PickerOption[]` | 必传 | 选项列表。 |
-| `title` | `ReactNode` | `'请选择'` | 顶部标题。 |
-| `confirmText` | `ReactNode` | `'确定'` | 确认按钮文案。 |
+| `title` | `ReactNode` | 当前语言的“请选择” | 顶部标题。 |
+| `confirmText` | `ReactNode` | 当前语言的“确定” | 确认按钮文案。 |
 | `emptyText` | `ReactNode` | `undefined` | `options` 为空时传给 `Empty` 的文案。 |
 | `value` | `number` | `undefined` | 受控模式下的选中下标。 |
 | `defaultIndex` | `number` | `0` | 非受控模式下的初始选中下标。 |

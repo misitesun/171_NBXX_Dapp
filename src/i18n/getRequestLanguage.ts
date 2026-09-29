@@ -11,5 +11,7 @@ export function getRequestLanguage(): string {
 
     const language = findAppLanguage(getLanguage())
         ?? findAppLanguage(DEFAULT_LANGUAGE_CODE)
-    return language?.code ?? DEFAULT_LANGUAGE_CODE
+    // PHP supports these three locale values; Japanese/Korean use its English errors.
+    const code = language?.code ?? DEFAULT_LANGUAGE_CODE
+    return code === 'zh-Hans' ? 'zh-CN' : code === 'zh-Hant' ? 'zh-TW' : 'en-US'
 }

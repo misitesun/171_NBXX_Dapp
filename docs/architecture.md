@@ -56,3 +56,15 @@ Use a feature-local file when one page owns the behavior. Promote code only afte
 ### Sidebar shell presentation
 
 MainLayout owns sidebar visibility and passes `sidebarOpen` to HeaderBar. MenuToggleIcon reverses from the current animation frame; SidebarMenu remains a consumer of MAIN_PAGE_ITEMS and the wallet store. WalletOrbitBorder is decorative only. Clipboard access continues through shared/clipboard; no authentication, referral API, route, storage or contract boundary is added.
+
+NodeXX 项目通过 APP_CONFIG.sidebarMenuEnabled 配置关闭侧栏入口与渲染；原菜单模式和内部交互边界保留。
+
+## NodeXX API鉴权
+
+features/auth拥有当前PHP钱包签名协议、会话恢复与失效，features/user拥有用户及直推GET校验；stores/auth供路由、登录页及首页共享登录状态/用户资料。AuthenticatedHomePage绑定真实接口，静态HomePage保持展示配置边界；钱包及HTTP平台能力仍集中于services。详见docs/nbxx-api-integration.md。
+
+授权开屏自动从 `/ref/:ref`、旧查询参数或项目缓存读取邀请码，无输入框。公共HTTP通过auth提供者发送已连接Address（登录也发送）；Token仍需核对所属钱包后才能发送Bearer。存储服务集中解析来源和缓存，首页邀请链接只使用接口返回的本人referral_code。
+
+## NodeXX NFT 购买
+
+项目 ABI、env 地址与 buy 封装位于 src/services/contracts；购买价格、余额/授权编排及会话守卫位于 src/features/purchase。AuthenticatedHomePage 仅组合 API 数据、购买 hook、公共 ContractLoading 与 PagePullRefresh。通用钱包、Gas、ERC20 和回执等待服务保持现有边界。

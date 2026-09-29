@@ -34,3 +34,7 @@ During static UI development, opening `/h5` redirects directly to `/home` withou
 Every normalized pathname change resets the shared window scroll position to the top before the destination route is painted. This applies to first-level navigation, secondary pages, redirects, and browser back or forward navigation. Search-parameter and hash-only updates keep the current scroll position because they do not represent a page change.
 
 每次标准化后的 pathname 变化都会在目标路由绘制前，把共用 window 滚动位置重置到页面顶部。一级导航、二级页面、重定向以及浏览器前进/后退都遵循该规则；仅 query 或 hash 变化时保留当前位置，因为它们不视为页面切换。
+
+## NodeXX 实际鉴权入口
+
+本项目已接入当前接口文档：根路由进入home后由RequireAuthentication送往独立/login，保留ref查询参数。授权开屏页在公共MainLayout之外，按HU流程自动授权。邀请入口为明确的 `/ref/:ref`，对外邀请链接使用站点根路径 `/ref/邀请码`，不含部署目录；服务器将该路径转发到 `/h5/ref/**`，应用构建目录仍为 `/h5/`。旧 `/login?ref=…` 和 `/?ref=…` 仍可读取。普通单段路径不再被当作邀请码。受保护home必须经过会话恢复验证；showcase仍为开发静态展示入口。

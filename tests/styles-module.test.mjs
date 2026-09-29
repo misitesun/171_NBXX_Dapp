@@ -62,7 +62,7 @@ test('layout style modules expose common flex and grid helpers', () => {
     assert.doesNotMatch(mixins, /\bmask:/)
     assert.doesNotMatch(mixins, /mask-composite/)
     assert.doesNotMatch(mixins, /-webkit-mask/)
-    assert.match(color, /--app-btn-color:\s*#FFFFFF/)
+    assert.match(color, /--app-btn-color:\s*#000000/)
     assert.match(mixins, /\$color:\s*var\(--app-btn-color\)/)
     assert.match(common, /@use '\.\.\/mixins' as \*/)
     assert.match(common, /\.full-btn\s*\{[\s\S]*@include full-button\(88px, 20px\)/)

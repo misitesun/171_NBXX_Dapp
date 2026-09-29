@@ -115,6 +115,7 @@ function LanguageSwitchContent({
             showIcon={false}
             disabled={isChangingLanguage}
             maskClassName="language-switch__mask"
+            panelClassName="language-switch__panel"
             renderTrigger={renderLanguageTrigger}
             onChange={(nextValue) => {
                 if (typeof nextValue !== 'string') return

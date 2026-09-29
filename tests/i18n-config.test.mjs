@@ -48,10 +48,10 @@ test('all enabled common locales contain the business-neutral UI baseline', asyn
 
 test('returns the configured backend language and safely falls back', () => {
     globalThis.window = { localStorage: createStorage('ko') }
-    assert.equal(getRequestLanguage(), 'ko')
+    assert.equal(getRequestLanguage(), 'en-US')
 
     globalThis.window = { localStorage: createStorage('unsupported') }
-    assert.equal(getRequestLanguage(), 'zh-Hans')
+    assert.equal(getRequestLanguage(), 'zh-CN')
 })
 
 test('forces simplified Chinese when i18n is disabled', () => {

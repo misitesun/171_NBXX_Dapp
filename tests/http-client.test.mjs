@@ -42,7 +42,7 @@ test('sends only generic configured headers', async () => {
 
     assert.equal(captured.headers.get('Authorization'), 'Bearer token-value')
     assert.equal(captured.headers.has('Address'), false)
-    assert.equal(captured.headers.get('lang'), 'zh-Hant')
+    assert.equal(captured.headers.get('lang'), 'zh-TW')
     assert.equal(
         captured.headers.getContentType(),
         'application/json; charset=UTF-8',
@@ -64,7 +64,7 @@ test('omits the authorization header when local token storage is empty', async (
     assert.equal(captured.headers.has('Authorization'), false)
 })
 
-test('wallet authentication sends Address and Bearer only for a verified current wallet', async () => {
+test('wallet requests send the connected Address before login and pair Bearer only with a verified wallet', async () => {
     const storage = createStorage('token-value')
     storage.setItem('WALLET_ADDRESS', '0x0000000000000000000000000000000000000001')
     globalThis.window = { localStorage: storage }
@@ -101,7 +101,7 @@ test('wallet authentication sends Address and Bearer only for a verified current
         verifiedAddress = '0x0000000000000000000000000000000000000003'
         headers = await requestHeaders()
         assert.equal(headers.has('Authorization'), false)
-        assert.equal(headers.has('Address'), false)
+        assert.equal(headers.get('Address'), verifiedAddress)
     } finally {
         unregister()
     }
@@ -174,13 +174,13 @@ test('normalizes 401 and removes the cached token', async () => {
     clearHttpErrorNotification()
     const storage = createStorage('expired')
     globalThis.window = { localStorage: storage }
-    const unregisterAddress = registerHttpWalletAddressProvider(
-        () => '0x0000000000000000000000000000000000000001',
-    )
+    let checkedAddress = '0x0000000000000000000000000000000000000001'
+    const unregisterAddress = registerHttpWalletAddressProvider(() => checkedAddress)
 
     let unauthorizedCalls = 0
     const unregister = registerHttpUnauthorizedHandler(() => {
         unauthorizedCalls += 1
+        checkedAddress = undefined
     })
     const request = httpClient.request({
         url: '/private',

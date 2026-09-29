@@ -6,4 +6,9 @@
         height: 40px;
         object-fit: contain;
     }
+
+    &--wordmark &__logo {
+        width: 183px;
+        height: 40px;
+    }
 }

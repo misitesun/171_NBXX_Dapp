@@ -1,0 +1,72 @@
+[
+  {
+    "clientWidth": 375,
+    "lang": "zh-Hant",
+    "overflow": [],
+    "scrollWidth": 375,
+    "viewport": 375
+  },
+  {
+    "clientWidth": 750,
+    "lang": "zh-Hant",
+    "overflow": [],
+    "scrollWidth": 750,
+    "viewport": 750
+  },
+  {
+    "clientWidth": 375,
+    "lang": "ja",
+    "overflow": [],
+    "scrollWidth": 375,
+    "viewport": 375
+  },
+  {
+    "clientWidth": 750,
+    "lang": "ja",
+    "overflow": [],
+    "scrollWidth": 750,
+    "viewport": 750
+  },
+  {
+    "clientWidth": 375,
+    "lang": "ko",
+    "overflow": [],
+    "scrollWidth": 375,
+    "viewport": 375
+  },
+  {
+    "clientWidth": 750,
+    "lang": "ko",
+    "overflow": [],
+    "scrollWidth": 750,
+    "viewport": 750
+  },
+  {
+    "clientWidth": 375,
+    "lang": "en",
+    "overflow": [],
+    "scrollWidth": 375,
+    "viewport": 375
+  },
+  {
+    "clientWidth": 750,
+    "lang": "en",
+    "overflow": [],
+    "scrollWidth": 750,
+    "viewport": 750
+  },
+  {
+    "clientWidth": 375,
+    "lang": "zh-Hans",
+    "overflow": [],
+    "scrollWidth": 375,
+    "viewport": 375
+  },
+  {
+    "clientWidth": 750,
+    "lang": "zh-Hans",
+    "overflow": [],
+    "scrollWidth": 750,
+    "viewport": 750
+  }
+]

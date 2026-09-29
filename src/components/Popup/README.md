@@ -39,6 +39,9 @@ mask with a page-specific visual variant.
 所有 `Popup` 统一使用 50% 透明度的黑色蒙层。遮罩不会模糊底部页面，也不添加毛玻璃
 效果；调用方不能再替换成页面私有的遮罩视觉。
 
+Preset content wrappers localize their fallback title when the caller omits `title`; explicit title content is unchanged.
+调用方省略 `title` 时，预设内容外壳会翻译默认标题；显式传入的标题内容保持不变。
+
 | Position | Default content | Default animation | Recommended use |
 | --- | --- | --- | --- |
 | `center` | preset header + custom body | `zoomIn` / `zoomOut` | confirm dialogs, notice dialogs |
@@ -60,7 +63,7 @@ mask with a page-specific visual variant.
 | --- | --- | --- | --- |
 | `show` | `boolean` | required | Controls whether the popup is visible. |
 | `children` | `ReactNode` | required | Popup body content, similar to a Vue slot. |
-| `title` | `ReactNode` | `'标题'` in preset content | Only used by preset content wrappers. |
+| `title` | `ReactNode` | localized `Title` in preset content | Only used by preset content wrappers. |
 | `onClose` | `() => void` | `undefined` | Called when overlay or preset close icon requests closing. |
 | `onAfterClose` | `() => void` | `undefined` | Called after the leave animation finishes and the popup is destroyed. |
 | `position` | `'center' \| 'right' \| 'left' \| 'bottom'` | `'center'` | Controls placement and default animation. |
@@ -75,7 +78,7 @@ mask with a page-specific visual variant.
 | --- | --- | --- | --- |
 | `show` | `boolean` | 必传 | 控制弹窗是否显示。 |
 | `children` | `ReactNode` | 必传 | 弹窗主体内容，类似 Vue slot。 |
-| `title` | `ReactNode` | 预设内容中为 `'标题'` | 仅预设内容外壳会使用。 |
+| `title` | `ReactNode` | 预设内容中使用当前语言的“标题” | 仅预设内容外壳会使用。 |
 | `onClose` | `() => void` | `undefined` | 遮罩或预设关闭图标触发关闭时调用。 |
 | `onAfterClose` | `() => void` | `undefined` | 关闭动画结束且弹窗销毁后调用。 |
 | `position` | `'center' \| 'right' \| 'left' \| 'bottom'` | `'center'` | 控制弹窗位置和默认动画。 |

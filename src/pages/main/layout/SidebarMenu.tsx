@@ -66,7 +66,7 @@ export function SidebarMenu({ show, onClose, staticPreview = false }: SidebarMen
                             onClick={handleMenuLinkClick}
                         >
                             <span className="app-menu__icon-box"><Icon name={item.icon} className="app-menu__icon" /></span>
-                            <span className="app-menu__label">{item.title}</span>
+                            <span className="app-menu__label">{t(item.titleKey)}</span>
                             <Icon name="arrow" className="app-menu__chevron" />
                         </NavLink>
                     ))}

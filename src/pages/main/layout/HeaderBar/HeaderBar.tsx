@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
-import { Icon } from '@/components/Icon'
+import languageGlobe from '@/assets/common/language-globe.svg'
 import { LanguageSwitch } from '@/components/LanguageSwitch'
 import { maskWalletAddress } from '@/shared/formatters/maskWalletAddress.ts'
 import { useDappStore } from '@/stores/dapp/index.ts'
@@ -40,13 +40,13 @@ export function HeaderBar({
                     {/* 右侧 */}
                     <div className="app-header-bar__actions flex items-center">
                         {staticPreview ? (
-                            <button type="button" className="app-header-bar__control flex items-center justify-center" aria-label={t('语言')} title={t('静态展示')}><Icon name="language" className="size-38" /></button>
-                        ) : <LanguageSwitch className="app-header-bar__control flex items-center justify-center"><Icon name="language" className="size-38" /></LanguageSwitch>}
+                            <button type="button" className="app-header-bar__control flex items-center justify-center" aria-label={t('语言')} title={t('静态展示')}><img src={languageGlobe} alt="" /></button>
+                        ) : <LanguageSwitch className="app-header-bar__control flex items-center justify-center"><img src={languageGlobe} alt={t('语言')} /></LanguageSwitch>}
                         {showWalletAddress ? (
                             <div className="auto-btn size-24 bold-6 ml-20">
                                 {maskWalletAddress(walletAddress)}
                             </div>
-                        ) : null}
+                        ) : !staticPreview ? <div className="auto-btn size-24 bold-6 ml-20">{t('未连接')}</div> : null}
                         {showSidebarMenu ? (
                             <button
                                 type="button"

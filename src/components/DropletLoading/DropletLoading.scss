@@ -2,6 +2,7 @@
     --droplet-loading-size: 300px;
     --droplet-loading-dot-size: 56px;
     --droplet-loading-shadow-size: 30px;
+    --droplet-loading-gradient: linear-gradient(to right, #50D6FC, #1989F5);
 
     display: block;
     width: var(--droplet-loading-size);
@@ -43,7 +44,7 @@
             width: var(--droplet-loading-dot-size);
             height: var(--droplet-loading-dot-size);
             content: "";
-            background-image: linear-gradient(to right, #50D6FC, #1989F5);
+            background-image: var(--droplet-loading-gradient);
             border-radius: 50%;
             box-shadow: 0 0 var(--droplet-loading-shadow-size) #152535;
         }

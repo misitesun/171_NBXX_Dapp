@@ -85,7 +85,7 @@ test('empty component wraps the shared no-data image and text', async () => {
 
     assert.match(styles, /\.empty\s*\{/)
     assert.match(styles, /&__image/)
-    assert.match(styles, /width:\s*204px/)
+    assert.match(styles, /width:\s*160px/)
     assert.match(styles, /height:\s*auto/)
 
     assert.match(entry, /export \{ Empty \} from '\.\/Empty\.tsx'/)

@@ -45,11 +45,8 @@ Keep the file name aligned with the primary exported function.
 Do not recreate a generic Vue-style `v-init` entry point.
 不要重新创建类似 Vue `v-init` 的万能入口。
 
-`formatRelativeTime()` currently outputs the Chinese word `昨天` directly.
-`formatRelativeTime()` 当前会直接输出中文“昨天”。
-
-TODO(i18n): Provide this copy through the translation function after the i18n module is connected to formatters.
-TODO(i18n)：格式化模块接入国际化后，通过翻译函数提供该文案。
+`formatRelativeTime()` translates its yesterday label through the active common locale.
+`formatRelativeTime()` 使用当前通用语言包翻译“昨天”文案。
 
 `formatTwoDigitNumber()` only pads non-negative integers from `0` to `9`.
 `formatTwoDigitNumber()` 只给 `0` 到 `9` 的非负整数补零。

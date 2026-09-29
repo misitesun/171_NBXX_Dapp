@@ -1,0 +1,49 @@
+{
+  "mobile": {
+    "fontSize": "12px",
+    "gap": "4.99999px",
+    "height": 30,
+    "overflow": false,
+    "viewport": 375,
+    "width": 82.4921875,
+    "x": 15,
+    "y": 716.625
+  },
+  "languages": [
+    {
+      "href": "https://x.com/NodeXX_cn",
+      "label": "瀏覽 NodeXX 官方推特",
+      "language": "zh-Hant",
+      "overflow": false,
+      "text": "Twitter"
+    },
+    {
+      "href": "https://x.com/NodeXX_cn",
+      "label": "NodeXX 公式 Twitter を開く",
+      "language": "ja",
+      "overflow": false,
+      "text": "Twitter"
+    },
+    {
+      "href": "https://x.com/NodeXX_cn",
+      "label": "NodeXX 공식 Twitter 방문",
+      "language": "ko",
+      "overflow": false,
+      "text": "Twitter"
+    },
+    {
+      "href": "https://x.com/NodeXX_cn",
+      "label": "Visit NodeXX on Twitter",
+      "language": "en",
+      "overflow": false,
+      "text": "Twitter"
+    },
+    {
+      "href": "https://x.com/NodeXX_cn",
+      "label": "访问 NodeXX 官方推特",
+      "language": "zh-Hans",
+      "overflow": false,
+      "text": "Twitter"
+    }
+  ]
+}

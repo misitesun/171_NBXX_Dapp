@@ -26,6 +26,9 @@ The registered function should return `Promise<void>` when it loads API data, co
 The refresh indicator settles only after the registered function finishes.
 刷新图标会等注册函数执行完成后再收起。
 
+Refresh and load-more status copy is resolved through the active common locale, including loading, loading-more and finished states.
+刷新及加载更多状态文案会按当前通用语言包显示，包括加载中、加载更多和已完成状态。
+
 Pass `onError` to observe rejected refresh or load-more work. The container catches event-driven promise rejections, reports them through this callback and always restores its idle state.
 通过 `onError` 接收刷新或加载更多的失败。容器会捕获事件触发的 Promise 拒绝、交给该回调处理，并始终恢复空闲状态。
 

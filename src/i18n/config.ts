@@ -11,9 +11,10 @@ export interface AppLanguage {
 async function loadCommonMessages(
     base: Promise<{ default: LanguageMessages }>,
     dappH5: Promise<{ default: LanguageMessages }>,
+    project: Promise<{ default: LanguageMessages }>,
 ): Promise<LanguageMessages> {
-    const [baseMessages, dappH5Messages] = await Promise.all([base, dappH5])
-    return { ...baseMessages.default, ...dappH5Messages.default }
+    const [baseMessages, dappH5Messages, projectMessages] = await Promise.all([base, dappH5, project])
+    return { ...baseMessages.default, ...dappH5Messages.default, ...projectMessages.default }
 }
 
 export const APP_LANGUAGES = [
@@ -22,6 +23,7 @@ export const APP_LANGUAGES = [
         load: () => loadCommonMessages(
             import('./locales/common/zh-Hans.json'),
             import('./locales/common/dappH5/zh-Hans.json'),
+            import('./locales/project/zh-Hans.json'),
         ),
     },
     {
@@ -29,6 +31,7 @@ export const APP_LANGUAGES = [
         load: () => loadCommonMessages(
             import('./locales/common/zh-Hant.json'),
             import('./locales/common/dappH5/zh-Hant.json'),
+            import('./locales/project/zh-Hant.json'),
         ),
     },
     {
@@ -36,6 +39,7 @@ export const APP_LANGUAGES = [
         load: () => loadCommonMessages(
             import('./locales/common/ja.json'),
             import('./locales/common/dappH5/ja.json'),
+            import('./locales/project/ja.json'),
         ),
     },
     {
@@ -43,6 +47,7 @@ export const APP_LANGUAGES = [
         load: () => loadCommonMessages(
             import('./locales/common/ko.json'),
             import('./locales/common/dappH5/ko.json'),
+            import('./locales/project/ko.json'),
         ),
     },
     {
@@ -50,6 +55,7 @@ export const APP_LANGUAGES = [
         load: () => loadCommonMessages(
             import('./locales/common/en.json'),
             import('./locales/common/dappH5/en.json'),
+            import('./locales/project/en.json'),
         ),
     },
 ] as const satisfies readonly AppLanguage[]

@@ -86,7 +86,7 @@ test('create package builds a template archive and creates a project from it', a
         assert.equal(existsSync(join(target, 'packages/create-template-react')), false)
         assert.equal(existsSync(join(target, 'src/pages/main/home/HomePage.tsx')), true)
         assert.equal(existsSync(join(target, 'src/pages/main/stake')), false)
-        assert.equal(existsSync(join(target, 'src/features/auth')), false)
+        assert.equal(existsSync(join(target, 'src/features/auth')), true)
         assert.equal(existsSync(join(target, 'src/services/dapp/uniswapV2Router.ts')), false)
 
         const createdPackageJson = JSON.parse(

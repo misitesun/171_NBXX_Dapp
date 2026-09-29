@@ -19,3 +19,6 @@ import { BasicCarousel } from '@/components/Carousel'
 
 `NoticeCarousel` accepts an array of local text items and scrolls vertically every three seconds. One item remains static. Its fixed single-line height is independent of BasicCarousel's auto-height behavior.
 公告轮播使用 NoticeCarousel，上下切换、三秒一条；只有一条时不自动播放。
+
+The notice carousel's accessible name follows the active common locale.
+公告轮播的无障碍名称跟随当前通用语言包。

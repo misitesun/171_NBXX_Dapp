@@ -1,4 +1,5 @@
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Icon } from '../../Icon'
 
@@ -12,10 +13,11 @@ export interface PopupContentCenterProps extends Omit<ComponentPropsWithoutRef<'
 export function PopupContentCenter({
     className = '',
     children,
-    title = '标题',
+    title,
     onClose,
     ...props
 }: PopupContentCenterProps) {
+    const { t } = useTranslation()
     const classes = [
         'popup-content',
         'popup-content--center',
@@ -25,7 +27,7 @@ export function PopupContentCenter({
     return (
         <div className={classes} {...props}>
             <div className="popup-content__header">
-                <div className="popup-content__title size-32 bold-6">{title}</div>
+                <div className="popup-content__title size-32 bold-6">{title ?? t('标题')}</div>
                 <Icon name="cross" className="size-48 opc-6" onClick={onClose} />
             </div>
 

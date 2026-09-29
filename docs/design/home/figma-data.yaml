@@ -1,0 +1,860 @@
+NAME: "外包"
+
+GLOBAL_VARS:
+fill_2cd88062:
+  - type: IMAGE
+    imageRef: 8c7173043b399d25b649ea94faf0378d82ec3173
+    scaleMode: STRETCH
+    objectFit: fill
+    isBackground: false
+    imageDownloadArguments:
+      needsCropping: true
+      requiresImageDimensions: false
+      cropTransform:
+        - - 0.923954427242279
+          - 0
+          - 0.04752851650118828
+        - - 0
+          - 0.6463414430618286
+          - 0.18902438879013062
+      filenameSuffix: 3ba1e4
+fill_97d170e1: []
+fill_34dc0314:
+  - '#000000'
+fill_658ab2fa:
+  - '#FFFFFF'
+fill_f0120407:
+  - type: GRADIENT_LINEAR
+    gradient: linear-gradient(90deg, rgba(30, 255, 38, 1) 0%, rgba(39, 235, 119, 1) 100%)
+layout_177c5efc:
+  mode: none
+  sizing:
+    horizontal: hug
+    vertical: hug
+fill_8c89b23c:
+  - type: GRADIENT_LINEAR
+    gradient: linear-gradient(90deg, rgba(30, 255, 38, 1) 0%, rgba(255, 188, 0, 1) 100%)
+fill_b35ba609:
+  - type: IMAGE
+    imageRef: ebcc536e3ffc93170caebf220b5b77018b5434e6
+    scaleMode: STRETCH
+    objectFit: fill
+    isBackground: false
+    imageDownloadArguments:
+      needsCropping: true
+      requiresImageDimensions: false
+      cropTransform:
+        - - 0.6387882232666016
+          - 0
+          - 0.18725988268852234
+        - - 0
+          - 0.9275361895561218
+          - 0.014492753893136978
+      filenameSuffix: 6581b6
+layout_9e47dd2e:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 338
+    height: 440
+layout_395d698b:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 61
+    y: 30
+  dimensions:
+    width: 216
+    height: 216
+layout_56d3c81c:
+  mode: none
+  sizing:
+    horizontal: fill
+    vertical: hug
+style_e2a310bd:
+  fontFamily: PingFang SC
+  fontStyle: Semibold
+  fontWeight: 600
+  fontSize: 24
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+ts1:
+  fontFamily: Poppins
+  fontSize: 24
+ts2:
+  fontFamily: Poppins
+  fontStyle: SemiBold
+  fontSize: 40
+style_9a069dd4:
+  fontFamily: PingFang SC
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 32
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+layout_1a58b503:
+  mode: row
+  alignSelf: stretch
+  padding: 4px 12px
+  justifyContent: center
+  alignItems: center
+  gap: 10px
+  sizing:
+    horizontal: fill
+    vertical: hug
+fill_56c8d5af:
+  - rgba(1, 14, 24, 0.8)
+fill_5a1a324a:
+  - rgba(255, 255, 255, 0.2)
+style_8b7289d4:
+  fontFamily: PingFang SC
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 20
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+layout_d709ff6e:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 288
+    y: 10
+  dimensions:
+    width: 40
+    height: 40
+fill_5222c42a:
+  - rgba(255, 255, 255, 0.5)
+ts3:
+  fontFamily: Poppins
+  fontSize: 24
+  fills:
+    - '#FAF959'
+ts4:
+  fontFamily: Poppins
+  fontStyle: SemiBold
+  fills:
+    - '#FAF959'
+fill_6020d351:
+  - '#FAF959'
+fill_4fdc3509:
+  - rgba(180, 255, 0, 0.2)
+style_5bcb44df:
+  fontFamily: PingFang SC
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 24
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+style_59d62022:
+  fontFamily: PingFang SC
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 24
+  textAlignHorizontal: CENTER
+  textAlignVertical: TOP
+layout_36b77c52:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 38
+    height: 38
+layout_51aaf6aa:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: hug
+  dimensions:
+    width: 241
+ts5:
+  fills:
+    - '#B4FF00'
+ts6:
+  fills:
+    - '#FF0011'
+ts7:
+  fills:
+    - '#FFBC00'
+layout_9b4637c8:
+  mode: none
+  sizing:
+    horizontal: fixed
+    vertical: fixed
+  dimensions:
+    width: 100
+    height: 0
+style_6761f053:
+  fontFamily: PingFang SC
+  fontStyle: Semibold
+  fontWeight: 600
+  fontSize: 32
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_a1ec3889:
+  - '#25EC77'
+layout_5e68cfa9:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 0
+    y: 0
+  dimensions:
+    width: 335
+    height: 182
+fill_dbe29f28:
+  - rgba(255, 255, 255, 0.1)
+style_2685e9f5:
+  fontFamily: Poppins
+  fontStyle: SemiBold
+  fontWeight: 600
+  fontSize: 52
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+fill_5db237a5:
+  - rgba(0, 0, 0, 0.5)
+style_bc486324:
+  fontFamily: PingFang SC
+  fontStyle: Regular
+  fontWeight: 400
+  fontSize: 24
+  textAlignHorizontal: LEFT
+  textAlignVertical: TOP
+  textDecoration: UNDERLINE
+layout_0d8e6fe2:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 46
+    y: 15
+  dimensions:
+    width: 88
+    height: 30
+layout_8fbf33d4:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 42
+    y: 15
+  dimensions:
+    width: 96
+    height: 30
+layout_1ccd8b0d:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 40
+    y: 15
+  dimensions:
+    width: 100
+    height: 30
+layout_35cee012:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 43
+    y: 15
+  dimensions:
+    width: 94
+    height: 30
+
+ELEMENTS:
+EL-793fa6b2:
+  type: GROUP
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 338
+      height: 440
+  borderRadius: 0px 0px 0px 0px
+EL-662650c3:
+  type: FRAME
+  layout:
+    mode: row
+    alignSelf: stretch
+    alignItems: center
+    gap: 16px
+    sizing:
+      horizontal: fill
+      vertical: hug
+EL-2f9a1b78:
+  type: FRAME
+  layout:
+    mode: row
+    padding: 10px
+    justifyContent: center
+    alignItems: center
+    gap: 10px
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 48
+      height: 48
+  strokes: fill_4fdc3509
+  strokeWeight: 1px
+  borderRadius: 999px
+EL-805ac4b0:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.05512000992894173
+          - - 0
+            - 0.2371741235256195
+            - 0.284673810005188
+        filenameSuffix: 63634c
+  borderRadius: 24px
+EL-ad6aac6c:
+  type: RECTANGLE
+  layout:
+    mode: none
+    sizing:
+      horizontal: fill
+      vertical: fixed
+    dimensions:
+      height: 1
+  fills:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(90deg, rgba(180, 255, 0, 0.1) 0%, rgba(180, 255, 0, 1) 50%, rgba(180, 255, 0, 0.1) 100%)
+EL-df651b58:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.2888610064983368
+          - - 0
+            - 0.2371741235256195
+            - 0.284673810005188
+        filenameSuffix: 588b98
+  borderRadius: 24px
+EL-d9ab5c04:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.5386394262313843
+          - - 0
+            - 0.2371741235256195
+            - 0.284673810005188
+        filenameSuffix: 5c4f28
+  borderRadius: 24px
+EL-fba38b04:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.7832104563713074
+          - - 0
+            - 0.2371741235256195
+            - 0.284673810005188
+        filenameSuffix: 37ed27
+  borderRadius: 24px
+EL-cb4754f7:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.05390973389148712
+          - - 0
+            - 0.2371741235256195
+            - 0.5050546526908875
+        filenameSuffix: 1f30d9
+  borderRadius: 24px
+EL-e4c164da:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.2906672954559326
+          - - 0
+            - 0.2371741235256195
+            - 0.5091833472251892
+        filenameSuffix: 54b405
+  borderRadius: 24px
+EL-5a7acbb8:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.5370884537696838
+          - - 0
+            - 0.2371741235256195
+            - 0.513029932975769
+        filenameSuffix: 55d3b1
+  borderRadius: 24px
+EL-93edbec7:
+  type: RECTANGLE
+  layout: layout_36b77c52
+  fills:
+    - type: IMAGE
+      imageRef: b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5
+      scaleMode: STRETCH
+      objectFit: fill
+      isBackground: false
+      imageDownloadArguments:
+        needsCropping: true
+        requiresImageDimensions: false
+        cropTransform:
+          - - 0.1794225126504898
+            - 0
+            - 0.7822491526603699
+          - - 0
+            - 0.2371741235256195
+            - 0.5086355805397034
+        filenameSuffix: 46d70f
+  borderRadius: 24px
+EL-86c95d04:
+  type: IMAGE-SVG
+  layout: layout_9b4637c8
+  strokes:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(-90deg, rgba(37, 236, 119, 0) 0%, rgba(37, 236, 119, 1) 100%)
+  strokeWeight: 1px
+  strokeAlign: CENTER
+EL-04244af5:
+  type: IMAGE-SVG
+  layout: layout_9b4637c8
+  strokes:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(-90deg, rgba(37, 236, 119, 1) 0%, rgba(37, 236, 119, 0) 100%)
+  strokeWeight: 1px
+  strokeAlign: CENTER
+EL-e487a1a2:
+  type: FRAME
+  layout:
+    mode: row
+    alignItems: center
+    gap: 4px
+    sizing:
+      horizontal: hug
+      vertical: hug
+EL-5cff7c69:
+  type: RECTANGLE
+  layout: layout_5e68cfa9
+  fills: fill_dbe29f28
+  strokes:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.1) 100%)
+  strokeWeight: 2px
+  borderRadius: 24px
+EL-c29f8b13:
+  type: FRAME
+  layout:
+    mode: column
+    alignItems: stretch
+    gap: 4px
+    sizing:
+      horizontal: fixed
+      vertical: hug
+    locationRelativeToParent:
+      x: 30
+      y: 36
+    dimensions:
+      width: 241
+EL-95ebbcd7:
+  type: RECTANGLE
+  layout: layout_5e68cfa9
+  fills:
+    - type: GRADIENT_LINEAR
+      gradient: linear-gradient(90deg, rgba(81, 239, 146, 1) 0%, rgba(0, 170, 42, 1) 100%)
+  borderRadius: 24px
+EL-68c8fc78:
+  type: FRAME
+  layout:
+    mode: column
+    gap: 4px
+    sizing:
+      horizontal: fixed
+      vertical: hug
+    locationRelativeToParent:
+      x: 30
+      y: 36
+    dimensions:
+      width: 241
+EL-3cba909c:
+  type: GROUP
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 335
+      height: 182
+  borderRadius: 0px 0px 0px 0px
+EL-0b11f12f:
+  type: GROUP
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 180
+      height: 60
+  borderRadius: 0px 0px 0px 0px
+EL-f6578983:
+  type: RECTANGLE
+  layout:
+    mode: none
+    sizing: {}
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 180
+      height: 60
+  fills: fill_dbe29f28
+  strokes: fill_5a1a324a
+  strokeWeight: 1px
+  borderRadius: 10px
+
+COMPONENTS:
+9029:1108:
+  id: 9029:1108
+  key: 366933e59ab5627396856a53bdc5f838cbe7bddd
+  name: Property 1=Frame 2
+  componentSetId: 9029:1105
+
+COMPONENT_SETS:
+9029:1105:
+  id: 9029:1105
+  key: 8d4e50e981ebfe26aafd2cceb71b950a9926c187
+  name: Component 3
+  description: ''
+
+NODES:
+[FRAME] "01-首页" #30192:718 layout={"mode":"none","sizing":{}} fills=["#010E18"]
+  [RECTANGLE] "image 4907" #30192:906 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":3531},"dimensions":{"width":750,"height":600}} fills=[{"type":"IMAGE","imageRef":"2a628d9f042db54a83c417f09d46be5266b6bfa6","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[1,0,0],[0,0.39068132638931274,0.6091005206108093]],"filenameSuffix":"3e7247"}}]
+  [RECTANGLE] "image 4908" #30192:908 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":-5},"dimensions":{"width":750,"height":1024}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(1, 14, 24, 0) 80%, rgba(1, 14, 24, 1) 100%)"},{"type":"IMAGE","imageRef":"3b9d6e0446e67e5facb43f73e204d89a2eeca064","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[1,0,-7.105427357601002e-15],[0,0.46785929799079895,0.16043712198734283]],"filenameSuffix":"68905c"}}]
+  [RECTANGLE] #30192:719 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":750,"height":128}} fills=["rgba(0, 0, 0, 0.2)"] effects={"backdropFilter":"blur(10px)"}
+  [RECTANGLE] "image 4924" #30204:2566 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":66},"dimensions":{"width":183,"height":40}} fills=fill_2cd88062
+  [RECTANGLE] "image 4925" #30204:3390 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":256,"y":3645},"dimensions":{"width":238,"height":52}} fills=fill_2cd88062
+  [RECTANGLE] #30192:720 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":128},"dimensions":{"width":750,"height":2}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(-90deg, rgba(37, 235, 121, 0.2) 40%, rgba(37, 235, 121, 1) 50%, rgba(37, 235, 121, 0.2) 60%)"}]
+  [INSTANCE] #30192:721 layout={"mode":"column","alignItems":"stretch","gap":"10px","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":10,"y":9},"dimensions":{"width":730,"height":19}} componentId=9029:1108
+    [RECTANGLE] "1 拷贝 13-2" #I30192:721;2144:3 layout={"mode":"none","sizing":{"horizontal":"fill","vertical":"fixed"},"dimensions":{"height":19.54}} fills=[{"type":"IMAGE","imageRef":"c12197eafa125dabadb2629a9c26407310d1a197","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+  [FRAME] #30192:722 layout={"mode":"row","alignItems":"center","gap":"20px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":458,"y":60}}
+    [IMAGE-SVG] #30192:730 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":52,"height":52}}
+    [FRAME] #30192:723 layout={"mode":"row","padding":"10px 30px","justifyContent":"center","alignItems":"center","gap":"10px","sizing":{"horizontal":"hug","vertical":"fixed"},"dimensions":{"height":52}} fills=fill_f0120407 borderRadius=999px
+      [TEXT] #30192:724 layout=layout_177c5efc fills=["#000F19"] textStyle={"fontFamily":"Poppins","fontStyle":"SemiBold","fontWeight":600,"fontSize":24,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="0xC1..839d"
+  [GROUP] #30192:972 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":294},"dimensions":{"width":690,"height":375}}
+    [RECTANGLE] "image 4909" #30192:911 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":30},"dimensions":{"width":690,"height":345}} fills=[{"type":"IMAGE","imageRef":"eb8fc782a306d0fbdcade638080d04a80456d9bc","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+    [RECTANGLE] "image 4914" #30192:969 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":72,"y":0},"dimensions":{"width":80,"height":80}} fills=[{"type":"IMAGE","imageRef":"b97a69db297b5ce6b0ab90f34942653b46ba445d","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.6603830456733704,0,0.17494873702526093],[0,0.8383838534355164,0.08080808073282242]],"filenameSuffix":"5ad938"}}]
+    [RECTANGLE] "image 4915" #30192:971 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":610,"y":144},"dimensions":{"width":80,"height":80}} fills=[{"type":"IMAGE","imageRef":"efe53283f45c83e4a49670ab8d15bed60bb71736","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.8088787198066711,0,0.10855675488710403],[0,0.8837000131607056,0.05679304897785187]],"filenameSuffix":"39d109"}}]
+  [TEXT] #30192:943 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":79,"y":168},"dimensions":{"width":593,"height":84}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(226, 255, 174, 1) 100%)"}] textStyle={"fontFamily":"Poppins","fontStyle":"SemiBold","fontWeight":600,"fontSize":56,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="全球永久股东分红 · NFT"
+  [GROUP] #30192:967 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":209,"y":262},"dimensions":{"width":348,"height":64}} borderRadius="0px 0px 0px 0px"
+    [FRAME] #30192:945 layout={"mode":"row","padding":"6px 20px","justifyContent":"center","alignItems":"center","gap":"10px","sizing":{"horizontal":"hug","vertical":"fixed"},"locationRelativeToParent":{"x":40,"y":4},"dimensions":{"height":54}} fills=["rgba(0, 14, 24, 0.8)"] strokes=fill_8c89b23c strokeWeight=1px borderRadius=999px
+      [TEXT] #30192:944 layout=layout_177c5efc fills=["#FFFF69"] textStyle={"fontFamily":"PingFang SC","fontStyle":"Regular","fontWeight":400,"fontSize":28,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="全球限量 2000 席"
+    [RECTANGLE] "image 4913" #30192:964 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":300,"y":0},"dimensions":{"width":48,"height":64}} fills=fill_b35ba609
+    [RECTANGLE] "image 4912" #30192:962 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":0,"y":0},"dimensions":{"width":48,"height":64}} fills=fill_b35ba609
+  [FRAME] #30192:1063 layout={"mode":"row","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":30,"y":709},"dimensions":{"width":690}}
+    [GROUP] #30192:1044 template=EL-793fa6b2
+      [RECTANGLE] "image 4916" #30192:979 layout=layout_9e47dd2e fills=[{"type":"IMAGE","imageRef":"3745e082d6943c2cf19aaa1595da096784dfde3f","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.7266666889190674,0,0.1366666704416275],[0,0.5618239045143127,0.3635144531726837]],"filenameSuffix":"7f6f7c"}}] strokes=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.2) 100%)"}] strokeWeight=1px borderRadius=24px
+      [RECTANGLE] "image 4925" #30204:2581 layout=layout_395d698b fills=[{"type":"IMAGE","imageRef":"fd971ee9f9714a2e5e244a3b0d1de669490707be","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=14px
+      [FRAME] #30204:2572 layout={"mode":"column","alignItems":"stretch","gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":97,"y":266},"dimensions":{"width":144}}
+        [TEXT] #30192:982 layout=layout_56d3c81c fills=fill_658ab2fa textStyle=style_e2a310bd text="初级 NFT"
+        [TEXT] #30192:984 layout=layout_56d3c81c fills=fill_658ab2fa textStyle=style_9a069dd4 boldWeight=600 text="{ts1}${/ts1}{ts2}**500**{/ts2}"
+        [FRAME] #30192:986 layout=layout_1a58b503 fills=fill_56c8d5af strokes=fill_5a1a324a strokeWeight=1px borderRadius=999px
+          [TEXT] #30192:985 layout=layout_177c5efc fills=["rgba(255, 255, 255, 0.6)"] textStyle=style_8b7289d4 text="限量 1500 份"
+      [ELLIPSE] #30192:987 layout=layout_d709ff6e strokes=fill_5222c42a strokeWeight=2px
+    [GROUP] #30192:1045 template=EL-793fa6b2
+      [RECTANGLE] "image 4916" #30192:1046 layout=layout_9e47dd2e fills=[{"type":"IMAGE","imageRef":"c48b6d1b5f9591ee820b569060e9748e97aba1fa","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.6494830250740051,0,0.1753425896167755],[0,0.502164363861084,0.40821412205696106]],"filenameSuffix":"5be090"}}] strokes=fill_8c89b23c strokeWeight=2px borderRadius=24px
+      [RECTANGLE] "image 4925" #30204:2583 layout=layout_395d698b fills=[{"type":"IMAGE","imageRef":"ef364732a1ce8c6a2c0007aa1c33634f442470fe","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}] borderRadius=14px
+      [RECTANGLE] "image 4917" #30192:1053 layout=layout_d709ff6e fills=[{"type":"IMAGE","imageRef":"b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1304163783788681,0,0.7979592680931091],[0,0.17807231843471527,0.08207036554813385]],"filenameSuffix":"d292b9"}}] borderRadius=999px
+      [FRAME] #30204:2576 layout={"mode":"column","alignItems":"stretch","gap":"6px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":100,"y":276},"dimensions":{"width":138}}
+        [TEXT] #30192:1048 layout=layout_56d3c81c fills=fill_658ab2fa textStyle=style_e2a310bd text="高级 NFT"
+        [TEXT] #30192:1051 layout=layout_56d3c81c fills=fill_6020d351 textStyle=style_9a069dd4 boldWeight=600 text="{ts3}${/ts3}{ts4}**1000**{/ts4}"
+        [FRAME] #30192:1049 layout=layout_1a58b503 fills=fill_56c8d5af strokes=fill_4fdc3509 strokeWeight=2px borderRadius=999px
+          [TEXT] #30192:1050 layout=layout_177c5efc fills=["#B4FF00"] textStyle=style_8b7289d4 text="限量 500 份"
+  [FRAME] #30204:1236 layout={"mode":"row","padding":"10px","justifyContent":"center","alignItems":"center","gap":"10px","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":30,"y":1189},"dimensions":{"width":690,"height":80}} fills=fill_f0120407 strokes=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(90deg, rgba(30, 255, 38, 0.2) 0%, rgba(39, 235, 119, 0.2) 100%)"}] strokeWeight=10px borderRadius=999px
+    [IMAGE-SVG] "Frame" #30204:1242 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":44,"height":44}} fills=fill_97d170e1
+    [TEXT] #30204:1235 layout=layout_177c5efc fills=fill_34dc0314 textStyle={"fontFamily":"PingFang SC","fontStyle":"Semibold","fontWeight":600,"fontSize":28,"textAlignHorizontal":"LEFT","textAlignVertical":"TOP"} text="购买高级 NFT"
+    [IMAGE-SVG] "Frame" #30204:1245 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":26,"height":26}} fills=fill_97d170e1
+  [RECTANGLE] #30192:977 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":1516},"dimensions":{"width":690,"height":845}} fills=["#001424"] strokes=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(138deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.16) 100%)"}] strokeWeight=2px borderRadius=24px
+  [RECTANGLE] #30192:1147 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":375,"y":1516},"dimensions":{"width":345,"height":845}} fills=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(180deg, rgba(30, 255, 38, 0.1) 0%, rgba(180, 255, 0, 0.1) 100%)"}] strokes=[{"type":"GRADIENT_LINEAR","gradient":"linear-gradient(90deg, rgba(30, 255, 38, 1) 0%, rgba(37, 235, 120, 1) 100%)"}] strokeWeight=2px effects={"boxShadow":"inset 0px 0px 40px 0px rgba(180, 255, 0, 0.4)"} borderRadius=20px
+  [TEXT] #30192:1064 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":123,"y":1452},"dimensions":{"width":504,"height":34}} fills=fill_5222c42a textStyle=style_5bcb44df text="一次性购买，享受长期权益，助力生态共同成长"
+  [TEXT] #30204:2588 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":2486},"dimensions":{"width":690,"height":68}} fills=fill_5222c42a textStyle=style_59d62022 text="从用户规模、交易活跃度、市场覆盖与生态合作等维度，了解 NodeXX 的平台发展概况"
+  [TEXT] #30192:988 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":124,"y":1536},"dimensions":{"width":158,"height":34}} fills=fill_658ab2fa textStyle=style_59d62022 text="初级 NFT 权益"
+  [TEXT] #30192:1065 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":469,"y":1536},"dimensions":{"width":158,"height":34}} fills=fill_6020d351 textStyle=style_59d62022 text="高级 NFT 权益"
+  [FRAME] #30192:999 layout={"mode":"column","alignItems":"stretch","gap":"20px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":50,"y":1590},"dimensions":{"width":305}}
+    [FRAME] #30192:993 template=EL-662650c3
+      [FRAME] #30192:992 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:991 template=EL-805ac4b0
+      [TEXT] #30192:989 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="{ts5}3% {/ts5}全球入单+复投流水永久分红 "
+    [RECTANGLE] #30192:998 template=EL-ad6aac6c
+    [FRAME] #30192:994 template=EL-662650c3
+      [FRAME] #30192:995 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:996 template=EL-df651b58
+      [TEXT] #30192:997 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="买: {ts6}1.5%{/ts6}{ts5} {/ts5}手续费"
+    [RECTANGLE] #30192:1000 template=EL-ad6aac6c
+    [FRAME] #30192:1001 template=EL-662650c3
+      [FRAME] #30192:1002 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:1003 template=EL-d9ab5c04
+      [TEXT] #30192:1004 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="卖: {ts6}1.5%{/ts6}{ts5} {/ts5}手续费"
+    [RECTANGLE] #30192:1012 template=EL-ad6aac6c
+    [FRAME] #30192:1013 template=EL-662650c3
+      [FRAME] #30192:1014 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:1015 template=EL-fba38b04
+      [TEXT] #30192:1016 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="头矿 {ts7}0.5%{/ts7} /天矿机产出币"
+    [RECTANGLE] #30192:1017 template=EL-ad6aac6c
+    [FRAME] #30192:1018 template=EL-662650c3
+      [FRAME] #30192:1019 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:1020 template=EL-cb4754f7
+      [TEXT] #30192:1021 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="生态子币的空投+分红"
+    [RECTANGLE] #30192:1023 template=EL-ad6aac6c
+    [FRAME] #30192:1024 template=EL-662650c3
+      [FRAME] #30192:1025 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:1026 template=EL-e4c164da
+      [TEXT] #30192:1027 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="Dao组织投票权{ts5}（5票/份）{/ts5}"
+    [RECTANGLE] #30192:1028 template=EL-ad6aac6c
+    [FRAME] #30192:1029 template=EL-662650c3
+      [FRAME] #30192:1030 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:1031 template=EL-5a7acbb8
+      [TEXT] #30192:1032 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="税收 {ts5}2%{/ts5}"
+    [RECTANGLE] #30192:1033 template=EL-ad6aac6c
+    [FRAME] #30192:1034 template=EL-662650c3
+      [FRAME] #30192:1035 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30192:1036 template=EL-93edbec7
+      [TEXT] #30192:1037 layout=layout_51aaf6aa fills=fill_5222c42a textStyle=style_5bcb44df text="NOdeXX交易所免费配资 {ts7}$1000 {/ts7}/份"
+  [FRAME] #30204:1195 layout={"mode":"column","alignItems":"stretch","gap":"20px","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":395,"y":1590},"dimensions":{"width":305}}
+    [FRAME] #30204:1196 template=EL-662650c3
+      [FRAME] #30204:1197 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1198 template=EL-805ac4b0
+      [TEXT] #30204:1199 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="{ts5}4% {/ts5}全球入单+复投流水永久分红 "
+    [RECTANGLE] #30204:1200 template=EL-ad6aac6c
+    [FRAME] #30204:1201 template=EL-662650c3
+      [FRAME] #30204:1202 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1203 template=EL-df651b58
+      [TEXT] #30204:1204 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="买: {ts6}1.5%{/ts6}{ts5} {/ts5}手续费"
+    [RECTANGLE] #30204:1205 template=EL-ad6aac6c
+    [FRAME] #30204:1206 template=EL-662650c3
+      [FRAME] #30204:1207 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1208 template=EL-d9ab5c04
+      [TEXT] #30204:1209 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="卖: {ts6}1.5%{/ts6}{ts5} {/ts5}手续费"
+    [RECTANGLE] #30204:1210 template=EL-ad6aac6c
+    [FRAME] #30204:1211 template=EL-662650c3
+      [FRAME] #30204:1212 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1213 template=EL-fba38b04
+      [TEXT] #30204:1214 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="头矿 {ts7}1%{/ts7} /天矿机产出币"
+    [RECTANGLE] #30204:1215 template=EL-ad6aac6c
+    [FRAME] #30204:1216 template=EL-662650c3
+      [FRAME] #30204:1217 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1218 template=EL-cb4754f7
+      [TEXT] #30204:1219 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="生态子币的空投+分红"
+    [RECTANGLE] #30204:1220 template=EL-ad6aac6c
+    [FRAME] #30204:1221 template=EL-662650c3
+      [FRAME] #30204:1222 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1223 template=EL-e4c164da
+      [TEXT] #30204:1224 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="Dao组织投票权{ts5}（10票/份）{/ts5}"
+    [RECTANGLE] #30204:1225 template=EL-ad6aac6c
+    [FRAME] #30204:1226 template=EL-662650c3
+      [FRAME] #30204:1227 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1228 template=EL-5a7acbb8
+      [TEXT] #30204:1229 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="税收 {ts5}3%{/ts5}"
+    [RECTANGLE] #30204:1230 template=EL-ad6aac6c
+    [FRAME] #30204:1231 template=EL-662650c3
+      [FRAME] #30204:1232 template=EL-2f9a1b78
+        [RECTANGLE] "image 4917" #30204:1233 template=EL-93edbec7
+      [TEXT] #30204:1234 layout=layout_51aaf6aa fills=fill_658ab2fa textStyle=style_5bcb44df text="NOdeXX交易所免费配资 {ts7}$3000 {/ts7}/份"
+  [FRAME] #30192:1060 layout={"mode":"row","alignItems":"center","gap":"24px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":187,"y":1387}}
+    [IMAGE-SVG] #30192:1058 template=EL-86c95d04
+    [TEXT] #30192:1057 layout=layout_177c5efc fills=fill_a1ec3889 textStyle=style_6761f053 text="权益对比"
+    [IMAGE-SVG] #30192:1061 template=EL-04244af5
+  [FRAME] #30204:2589 layout={"mode":"row","alignItems":"center","gap":"24px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":123,"y":2421}}
+    [IMAGE-SVG] #30204:2590 template=EL-86c95d04
+    [TEXT] #30204:2591 layout=layout_177c5efc fills=fill_a1ec3889 textStyle=style_6761f053 text="平台全球指标数据"
+    [IMAGE-SVG] #30204:2592 template=EL-04244af5
+  [FRAME] #30204:1262 layout={"mode":"row","alignItems":"center","gap":"30px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":66,"y":1309}}
+    [FRAME] #30204:1254 template=EL-e487a1a2
+      [RECTANGLE] "image 4917" #30204:1253 layout=layout_36b77c52 fills=[{"type":"IMAGE","imageRef":"b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1794225126504898,0,0.056993793696165085],[0,0.2371741235256195,0.7402715682983398]],"filenameSuffix":"274b00"}}]
+      [TEXT] #30204:1250 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_5bcb44df text="安全合约保障"
+    [FRAME] #30204:1256 template=EL-e487a1a2
+      [RECTANGLE] "image 4917" #30204:1257 layout=layout_36b77c52 fills=[{"type":"IMAGE","imageRef":"b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1794225126504898,0,0.29315492510795593],[0,0.2371741235256195,0.7402715682983398]],"filenameSuffix":"784115"}}]
+      [TEXT] #30204:1258 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_5bcb44df text="全球限量发售"
+    [FRAME] #30204:1259 template=EL-e487a1a2
+      [RECTANGLE] "image 4917" #30204:1260 layout=layout_36b77c52 fills=[{"type":"IMAGE","imageRef":"b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1794225126504898,0,0.5339627265930176],[0,0.2371741235256195,0.7402715682983398]],"filenameSuffix":"5b7961"}}]
+      [TEXT] #30204:1261 layout=layout_177c5efc fills=fill_658ab2fa textStyle=style_5bcb44df text="成为生态股东"
+  [GROUP] #30204:2593 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":2594},"dimensions":{"width":335,"height":182}} borderRadius="0px 0px 0px 0px"
+    [RECTANGLE] #30204:2594 template=EL-5cff7c69
+    [FRAME] #30204:2609 template=EL-c29f8b13
+      [TEXT] #30204:2610 layout=layout_56d3c81c fills=fill_a1ec3889 textStyle=style_2685e9f5 text="100W+"
+      [TEXT] #30204:2611 layout=layout_56d3c81c fills=fill_5222c42a textStyle=style_5bcb44df text="全球用户"
+  [GROUP] #30204:2627 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":385,"y":2594},"dimensions":{"width":335,"height":182}} borderRadius="0px 0px 0px 0px"
+    [RECTANGLE] #30204:2628 template=EL-95ebbcd7
+    [FRAME] #30204:2629 template=EL-68c8fc78
+      [TEXT] #30204:2630 layout=layout_177c5efc fills=fill_34dc0314 textStyle=style_2685e9f5 text="$6000W+"
+      [TEXT] #30204:2631 layout=layout_56d3c81c fills=fill_5db237a5 textStyle=style_5bcb44df text="日均交易量"
+  [FRAME] #30204:2645 layout={"mode":"row","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":30,"y":2796},"dimensions":{"width":690}}
+    [GROUP] #30204:2640 template=EL-3cba909c
+      [RECTANGLE] #30204:2641 template=EL-95ebbcd7
+      [FRAME] #30204:2642 template=EL-68c8fc78
+        [TEXT] #30204:2643 layout=layout_177c5efc fills=fill_34dc0314 textStyle=style_2685e9f5 text="200+"
+        [TEXT] #30204:2644 layout=layout_56d3c81c fills=fill_5db237a5 textStyle=style_5bcb44df text="现货交易对"
+    [GROUP] #30204:2635 template=EL-3cba909c
+      [RECTANGLE] #30204:2636 template=EL-5cff7c69
+      [FRAME] #30204:2637 template=EL-c29f8b13
+        [TEXT] #30204:2638 layout=layout_56d3c81c fills=fill_a1ec3889 textStyle=style_2685e9f5 text="1000x"
+        [TEXT] #30204:2639 layout=layout_56d3c81c fills=fill_5222c42a textStyle=style_5bcb44df text="最大杠杆倍数"
+  [FRAME] #30204:2646 layout={"mode":"row","justifyContent":"space-between","alignItems":"center","sizing":{"horizontal":"fixed","vertical":"hug"},"locationRelativeToParent":{"x":30,"y":2990},"dimensions":{"width":690}}
+    [GROUP] #30204:2652 template=EL-3cba909c
+      [RECTANGLE] #30204:2653 template=EL-5cff7c69
+      [FRAME] #30204:2654 template=EL-c29f8b13
+        [TEXT] #30204:2655 layout=layout_56d3c81c fills=fill_a1ec3889 textStyle=style_2685e9f5 text="30+"
+        [TEXT] #30204:2656 layout=layout_56d3c81c fills=fill_5222c42a textStyle=style_5bcb44df text="覆盖国家/地区"
+    [GROUP] #30204:2647 template=EL-3cba909c
+      [RECTANGLE] #30204:2648 template=EL-95ebbcd7
+      [FRAME] #30204:2649 template=EL-68c8fc78
+        [TEXT] #30204:2650 layout=layout_177c5efc fills=fill_34dc0314 textStyle=style_2685e9f5 text="1000+"
+        [TEXT] #30204:2651 layout=layout_56d3c81c fills=fill_5db237a5 textStyle=style_5bcb44df text="合作KOL数量"
+  [TEXT] #30204:2881 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":3297},"dimensions":{"width":690,"height":68}} fills=fill_5222c42a textStyle=style_59d62022 text="携手全球区块链与财经媒体，持续传递 NodeXX 的产品进展与行业观点"
+  [TEXT] #30204:3391 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":3717},"dimensions":{"width":690,"height":34}} fills=fill_5222c42a textStyle=style_59d62022 text="节点筑底｜价值新生"
+  [TEXT] #30204:3403 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":31,"y":3855},"dimensions":{"width":347,"height":34}} fills=fill_a1ec3889 textStyle=style_bc486324 text="https://www.nodexx.co/zh-CN"
+  [TEXT] #30204:3421 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":31,"y":3973},"dimensions":{"width":293,"height":34}} fills=fill_a1ec3889 textStyle=style_bc486324 text="https://x.com/NodeXX\\_cn"
+  [FRAME] #30204:2882 layout={"mode":"row","alignItems":"center","gap":"24px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":155,"y":3232}}
+    [IMAGE-SVG] #30204:2883 template=EL-86c95d04
+    [TEXT] #30204:2884 layout=layout_177c5efc fills=fill_a1ec3889 textStyle=style_6761f053 text="媒体合作伙伴"
+    [IMAGE-SVG] #30204:2885 template=EL-04244af5
+  [TEXT] #30204:3404 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":3811},"dimensions":{"width":204,"height":34}} fills=fill_658ab2fa textStyle=style_5bcb44df text="官方网站/官方社群"
+  [TEXT] #30204:3422 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":30,"y":3929},"dimensions":{"width":96,"height":34}} fills=fill_658ab2fa textStyle=style_5bcb44df text="官方社媒"
+  [FRAME] #30204:3426 layout={"mode":"row","padding":"10px","justifyContent":"center","alignItems":"center","gap":"10px","sizing":{"horizontal":"fixed","vertical":"fixed"},"locationRelativeToParent":{"x":520,"y":3811},"dimensions":{"width":200,"height":200}} fills=fill_658ab2fa borderRadius=20px
+    [RECTANGLE] "image 4927" #30204:3424 layout={"mode":"none","sizing":{"horizontal":"fixed","vertical":"fixed"},"dimensions":{"width":168,"height":168}} fills=[{"type":"IMAGE","imageRef":"89146e0b3cef7e0d7dea9564a1bf6d7dcbd41575","scaleMode":"FILL","objectFit":"cover","isBackground":false,"imageDownloadArguments":{"needsCropping":false,"requiresImageDimensions":false}}]
+  [FRAME] #30204:3427 layout={"mode":"row","alignItems":"center","gap":"20px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":-220,"y":3405}}
+    [GROUP] #30204:3428 template=EL-0b11f12f
+      [RECTANGLE] #30204:3429 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3430 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.014037058688700199],[0,0.11325027793645859,0.13137032091617584]],"filenameSuffix":"30129b"}}]
+    [GROUP] #30204:3431 template=EL-0b11f12f
+      [RECTANGLE] #30204:3432 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3433 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":28,"y":22},"dimensions":{"width":124,"height":15}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1863100528717041,0,0.2006908506155014],[0,0.045912276953458786,0.16197851300239563]],"filenameSuffix":"2a9e56"}}]
+    [GROUP] #30204:3434 template=EL-0b11f12f
+      [RECTANGLE] #30204:3435 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3436 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.4181412160396576],[0,0.11325027793645859,0.12805938720703125]],"filenameSuffix":"3858dd"}}]
+    [GROUP] #30204:3437 template=EL-0b11f12f
+      [RECTANGLE] #30204:3438 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3439 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.6099212765693665],[0,0.11325027793645859,0.13137032091617584]],"filenameSuffix":"60434f"}}]
+    [GROUP] #30204:3440 template=EL-0b11f12f
+      [RECTANGLE] #30204:3441 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3442 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":44,"y":15},"dimensions":{"width":91,"height":30}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16954214870929718,0,0.8092986345291138],[0,0.11325028538703918,0.12577268481254578]],"filenameSuffix":"606ce4"}}]
+    [GROUP] #30204:3443 template=EL-0b11f12f
+      [RECTANGLE] #30204:3444 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3445 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.014037058688700199],[0,0.11325027793645859,0.34877151250839233]],"filenameSuffix":"1bdfad"}}]
+    [GROUP] #30204:3446 template=EL-0b11f12f
+      [RECTANGLE] #30204:3447 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3448 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":38,"y":15},"dimensions":{"width":104,"height":30}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.19376245141029358,0,0.19849370419979095],[0,0.11325028538703918,0.34645047783851624]],"filenameSuffix":"466e42"}}]
+    [GROUP] #30204:3449 template=EL-0b11f12f
+      [RECTANGLE] #30204:3450 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3451 layout=layout_8fbf33d4 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17885765433311462,0,0.4119400382041931],[0,0.11325028538703918,0.3466213643550873]],"filenameSuffix":"17c787"}}]
+    [GROUP] #30204:3452 template=EL-0b11f12f
+      [RECTANGLE] #30204:3453 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3454 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.6173848509788513],[0,0.11325027793645859,0.3439779579639435]],"filenameSuffix":"2c318a"}}]
+    [GROUP] #30204:3455 template=EL-0b11f12f
+      [RECTANGLE] #30204:3456 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3457 layout=layout_8fbf33d4 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17885765433311462,0,0.8065859079360962],[0,0.11325028538703918,0.34848129749298096]],"filenameSuffix":"590501"}}]
+  [FRAME] #30204:3458 layout={"mode":"row","alignItems":"center","gap":"20px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":-320,"y":3485}}
+    [GROUP] #30204:3459 template=EL-0b11f12f
+      [RECTANGLE] #30204:3460 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3461 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.014811974950134754],[0,0.11325027793645859,0.5664336681365967]],"filenameSuffix":"5ac36b"}}]
+    [GROUP] #30204:3462 template=EL-0b11f12f
+      [RECTANGLE] #30204:3463 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3464 layout=layout_1ccd8b0d fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1863100528717041,0,0.20365530252456665],[0,0.11325028538703918,0.5648826956748962]],"filenameSuffix":"620b3b"}}]
+    [GROUP] #30204:3465 template=EL-0b11f12f
+      [RECTANGLE] #30204:3466 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3467 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.4145675003528595],[0,0.11325028538703918,0.5651955008506775]],"filenameSuffix":"678cd0"}}]
+    [GROUP] #30204:3468 template=EL-0b11f12f
+      [RECTANGLE] #30204:3469 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3470 layout=layout_1ccd8b0d fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1863100528717041,0,0.6066747903823853],[0,0.11325028538703918,0.5668824315071106]],"filenameSuffix":"78c8b3"}}]
+    [GROUP] #30204:3471 template=EL-0b11f12f
+      [RECTANGLE] #30204:3472 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3473 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":45,"y":15},"dimensions":{"width":90,"height":30}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1676790416240692,0,0.815346360206604],[0,0.11325028538703918,0.5609543919563293]],"filenameSuffix":"728fe8"}}]
+    [GROUP] #30204:3474 template=EL-0b11f12f
+      [RECTANGLE] #30204:3475 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3476 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.01372393686324358],[0,0.11325029283761978,0.7767006754875183]],"filenameSuffix":"2fd57f"}}]
+    [GROUP] #30204:3477 template=EL-0b11f12f
+      [RECTANGLE] #30204:3478 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3479 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.21356143057346344],[0,0.11325027793645859,0.7707014679908752]],"filenameSuffix":"19264b"}}]
+    [GROUP] #30204:3480 template=EL-0b11f12f
+      [RECTANGLE] #30204:3481 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3482 layout=layout_8fbf33d4 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17885765433311462,0,0.41129934787750244],[0,0.11325028538703918,0.7733964920043945]],"filenameSuffix":"7c9389"}}]
+      [FRAME] "imTokenLogo 1" #30204:3483 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":45,"y":22},"dimensions":{"width":89,"height":16}} fills=fill_97d170e1
+    [GROUP] #30204:3484 template=EL-0b11f12f
+      [RECTANGLE] #30204:3485 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3486 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.6172506213188171],[0,0.11325028538703918,0.7714288830757141]],"filenameSuffix":"388793"}}]
+    [GROUP] #30204:3487 template=EL-0b11f12f
+      [RECTANGLE] #30204:3488 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3489 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.8137515783309937],[0,0.11325028538703918,0.7690830826759338]],"filenameSuffix":"4f1fe6"}}]

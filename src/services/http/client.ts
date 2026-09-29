@@ -36,7 +36,7 @@ export function registerHttpUnauthorizedHandler(
     }
 }
 
-/** Registers the current wallet address checked against the Token's owner. */
+/** Returns a connected address; when a Token exists, its owner must also match. */
 export function registerHttpWalletAddressProvider(
     provider: HttpWalletAddressProvider,
 ): () => void {
@@ -60,7 +60,7 @@ httpClient.interceptors.request.use((config) => {
         config.headers.delete(HTTP_HEADER.authorization)
     }
 
-    if (token && walletAddress) {
+    if (walletAddress) {
         config.headers.set(HTTP_HEADER.walletAddress, walletAddress)
     } else {
         config.headers.delete(HTTP_HEADER.walletAddress)

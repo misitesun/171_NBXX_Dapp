@@ -20,6 +20,7 @@ export function AppBrand({
     const { pushRoute } = useAppNavigate()
     const brandClassName = [
         'app-brand',
+        APP_CONFIG.brandWordmarkPath ? 'app-brand--wordmark' : '',
         'flex',
         'items-center',
         className,
@@ -35,13 +36,15 @@ export function AppBrand({
     }
 
     return (
-        <button type="button" className={brandClassName} onClick={handleBrandClick}>
+        <button type="button" className={brandClassName} aria-label={APP_CONFIG.name || 'NodeXX'} onClick={handleBrandClick}>
             <img
-                src={`${APP_CONFIG.routeBase}brand/app-logo.png`}
+                src={APP_CONFIG.brandWordmarkPath
+                    ? `${APP_CONFIG.routeBase}${APP_CONFIG.brandWordmarkPath}`
+                    : `${APP_CONFIG.routeBase}brand/app-logo.png`}
                 className="app-brand__logo"
                 alt=""
             />
-            <div className="ml-10 size-24 bold-6">
+            <div className="ml-10 size-24 bold-6" hidden={!APP_CONFIG.showBrandName}>
                 {APP_CONFIG.name || 'DApp'}
             </div>
         </button>

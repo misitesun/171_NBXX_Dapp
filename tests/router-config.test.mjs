@@ -32,6 +32,7 @@ test('router derives the home path from the project-level home route name', asyn
     ])
 
     assert.equal(ROUTE_PATH.home, '/home')
+    assert.equal(ROUTE_PATH.referral, '/ref/:ref')
     assert.match(routerConfigSource, /export const APP_HOME_ROUTE_NAME\s*=\s*APP_CONFIG\.homeRouteName/)
     assert.match(routesSource, /home:\s*`\/\$\{APP_HOME_ROUTE_NAME\}`/)
     assert.doesNotMatch(routesSource, /home:\s*'\/home'/)
@@ -46,10 +47,10 @@ test('layout exposes the supported menu modes for templates', () => {
     assert.equal(DEFAULT_LAYOUT_MENU_TYPE, 'sidebar')
 })
 
-test('route records keep only the blank starter route', () => {
+test('project routes include protected home and authorization entry', () => {
     assert.equal(ROUTE_PATH.root, '/')
     assert.equal(ROUTE_PATH.home, '/home')
-    assert.deepEqual(Object.keys(ROUTE_PATH), ['root', 'home'])
+    assert.deepEqual(Object.keys(ROUTE_PATH), ['root', 'home', 'login', 'referral'])
 })
 
 test('main page config owns the first-level page records', async () => {
@@ -65,15 +66,10 @@ test('main page config owns the first-level page records', async () => {
     assert.doesNotMatch(routerRoutesSource, /appRouteItems/)
 })
 
-test('app redirects root to the blank home route and preserves the layout shell', async () => {
-    const source = await readFile(
-        new URL('../src/router/AppRouter.tsx', import.meta.url),
-        'utf8',
-    )
-
-    assert.doesNotMatch(source, /SplashPage|LoginPage|RequireAuthentication/)
-    assert.match(source, /import \{ HomePage, MainLayout \} from '@\/pages\/main'/)
-    assert.match(source, /<Route path=\{ROUTE_PATH\.root\} element=\{<Navigate to=\{ROUTE_PATH\.home\} replace \/>\} \/>/)
-    assert.match(source, /<Route element=\{<MainLayout \/>\}>/)
-    assert.match(source, /<Route path="\*" element=\{<Navigate to=\{ROUTE_PATH\.home\} replace \/>\} \/>/)
+test('project gates the home route and keeps authorization outside the main layout', async () => {
+    const source = await readFile(new URL('../src/router/AppRouter.tsx', import.meta.url), 'utf8')
+    assert.match(source, /<Route path=\{ROUTE_PATH.login\} element=\{<LoginPage \/>\}/)
+    assert.match(source, /<Route element=\{<RequireAuthentication \/>\}>/)
+    assert.match(source, /element=\{<AuthenticatedHomePage \/>\}/)
+    assert.match(source, /<AuthSession \/>/)
 })

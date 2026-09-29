@@ -38,9 +38,9 @@ The blank template's `/h5` entry redirects to `/home` for static UI preview. The
 
 ### Wallet authentication headers
 
-In a DApp wallet host, a stored `WALLET_ADDRESS` may outlive the currently authorized account. `src/services/http/client.ts` therefore does not infer the `Address` header from storage or injected-provider presence. A wallet-authenticated project registers an address provider only after matching the current account to the Token owner. While registered, missing Token or missing checked address removes both `Authorization` and `Address`; an account-only project without that provider retains Bearer-only requests. `tests/http-client.test.mjs` covers these states and the post-401 omission.
+In a DApp wallet host, stored wallet addresses can be stale. HTTP never infers Address from storage or provider presence. The auth feature provides the connected address without a token for login; with a token it first matches the token owner. A missing checked address removes both headers while the provider is registered. Account-only requests retain Bearer-only behavior. The auth-owned 401 callback clears both the token and address. HTTP and auth regression tests cover these states.
 
-在 DApp 钱包宿主中，缓存的 `WALLET_ADDRESS` 可能与当前授权账号不同。因此 `src/services/http/client.ts` 不从缓存或注入钱包的存在推断 `Address`。钱包鉴权项目须在核对当前账号与 Token 关联账号后注册地址提供者。注册期间，Token 或已核对地址缺失时两个鉴权头都不发送；未注册该提供者的纯账号项目仍使用 Bearer。`tests/http-client.test.mjs` 覆盖这些状态及 401 后不再发送鉴权头。
+在 DApp 钱包宿主中，缓存钱包地址可能过时。HTTP不从缓存或钱包注入的存在推断Address。auth在无Token登录时提供已连接地址，有Token时先核对所属账号。注册提供者但没有已核对地址时两个头都不发送；纯账号请求仍只发Bearer。auth拥有的401回调清除Token及地址，HTTP与auth回归覆盖这些状态。
 
 ### Route scroll reset
 
@@ -91,3 +91,15 @@ Record the affected runtime, trigger, observed behavior, source file, chosen wor
 The right sidebar fills the viewport below the existing 100px design header. Its local transparent Popup overlay is an explicit sidebar-only exception; shared Popup defaults remain intact. Popup retains body-scroll locking during exit. Menu icon reverses within 250ms; reduced-motion snaps the icon and disables wallet/header decorative animations. Wallet address copying uses the existing centralized clipboard fallback.
 
 Manual regression: at 375px and 750px check header/panel alignment, no horizontal overflow, connected/disconnected wallet, five language widths, rapid menu reversal, Escape/menu close, body scroll restoration and reduced-motion. Tabbar remains the alternative navigation mode.
+
+### NodeXX 钱包登录与API locale
+
+当前PHP使用Login-{秒级timestamp}签名、60秒窗口。切换钱包或网络会取消旧请求并清除Token；刷新页面先核对缓存地址与当前连接地址，再GET我的信息。401回授权页。通过nbxx-auth行为测试验证失效、并发与恢复。UI保留五种语言，PHP仅三种lang值，日/韩后端错误使用英文。授权页Galaxy沿用HU_CHAIN的shader，原生WebGL替代ogl渲染器；无WebGL黑底正常登录，减少动态效果静止。人工验收：真实钱包签名成功、已有账号免邀请码、新账号有效邀请码、SSO异地登录、切钱包与切链、375px/750px、无钱包、五语言。
+
+2026-09-29：授权页按HU自动授权，没有输入框；依据开发者后续红框要求删除语言图标、文字标题及授权按钮。每次挂载自动尝试一次，失败后底部提示原因，刷新可重试，不循环弹签名。邀请码路径参数编码分享、自动解码读取，优先于旧 `?ref=` 与缓存；普通单段路径不作为邀请码。
+
+2026-09-29 后续调整：对外邀请链接使用 `/ref/邀请码`，不带打包目录 `/h5/`；服务器将 `/ref/*` 请求内部转发到 `/h5/ref/*`。应用仍使用 `/h5/` base，路由历史兼容无前缀与带 `/h5/` 的地址。验证时检查生成路径和 `/ref/:ref` 邀请码读取；部署服务器转发规则由服务器配置负责。
+
+### NodeXX NFT 购买确认与刷新
+
+购买通过当前钱包注入 Provider，在每个交易阶段检查既有项目链及登录钱包。授权成功后再次检查会话，切换账户不继续买入。购买回执成功后才提示成功；延迟 API 刷新使用独立错误边界，会话变化时忽略旧反馈和刷新。拒签沿 viem cause 的 4001 识别为取消。Node mock 与浏览器 hook fixture 覆盖这些边界，真实钱包部署和交易由开发者手动验收。

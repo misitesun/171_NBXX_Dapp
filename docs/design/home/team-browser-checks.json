@@ -1,0 +1,138 @@
+{
+  "geometry": {
+    "copy": {
+      "height": 72,
+      "width": 108,
+      "x": 582,
+      "y": 3181.890625
+    },
+    "decimal": "28px",
+    "invitation": {
+      "height": 313.9765625,
+      "width": 690,
+      "x": 30,
+      "y": 2979.90625
+    },
+    "list": {
+      "height": 1075,
+      "width": 650,
+      "x": 50,
+      "y": 3428.8828125
+    },
+    "member": {
+      "height": 260.9921875,
+      "width": 650,
+      "x": 50,
+      "y": 3428.8828125
+    },
+    "members": {
+      "height": 1180,
+      "width": 690,
+      "x": 30,
+      "y": 3323.8828125
+    },
+    "metric": {
+      "height": 182,
+      "width": 335,
+      "x": 30,
+      "y": 2565.90625
+    },
+    "overflow": false,
+    "viewport": 750
+  },
+  "mobile": {
+    "iconLoaded": true,
+    "memberCount": 4,
+    "metricHeight": 91,
+    "overflow": false,
+    "viewport": 375
+  },
+  "languages": [
+    {
+      "copy": "複製",
+      "language": "zh-Hant",
+      "members": 4,
+      "overflow": false,
+      "teamTitle": "團隊數據",
+      "width": 375
+    },
+    {
+      "copy": "コピー",
+      "language": "ja",
+      "members": 4,
+      "overflow": false,
+      "teamTitle": "チームデータ",
+      "width": 375
+    },
+    {
+      "copy": "복사",
+      "language": "ko",
+      "members": 4,
+      "overflow": false,
+      "teamTitle": "팀 데이터",
+      "width": 375
+    },
+    {
+      "copy": "Copy",
+      "language": "en",
+      "members": 4,
+      "overflow": false,
+      "teamTitle": "Team Data",
+      "width": 375
+    },
+    {
+      "copy": "复制",
+      "language": "zh-Hans",
+      "members": 4,
+      "overflow": false,
+      "teamTitle": "团队数据",
+      "width": 375
+    },
+    {
+      "language": "zh-Hant",
+      "members": 4,
+      "metricCount": 4,
+      "overflow": false,
+      "width": 750
+    },
+    {
+      "language": "ja",
+      "members": 4,
+      "metricCount": 4,
+      "overflow": false,
+      "width": 750
+    },
+    {
+      "language": "ko",
+      "members": 4,
+      "metricCount": 4,
+      "overflow": false,
+      "width": 750
+    },
+    {
+      "language": "en",
+      "members": 4,
+      "metricCount": 4,
+      "overflow": false,
+      "width": 750
+    },
+    {
+      "language": "zh-Hans",
+      "members": 4,
+      "metricCount": 4,
+      "overflow": false,
+      "width": 750
+    }
+  ],
+  "listScroll": {
+    "listY": 255.859375,
+    "maxScroll": 18,
+    "scrollTop": 18.5
+  },
+  "nft": {
+    "basicBenefitsSelected": true,
+    "basicSelected": "true"
+  },
+  "copySuccessToast": true,
+  "clipboardReadBackAvailable": false
+}

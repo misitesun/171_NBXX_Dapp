@@ -10,8 +10,12 @@ It uses the shared `Popup` for overlay, scroll locking and destroy-on-close beha
 The overlay cannot be closed by clicking the backdrop, because contract write waiting should block user interaction.
 遮罩不能通过点击背景关闭，因为写合约等待时应阻止用户继续操作。
 
+Pass `tone="green"` to use the project action-green gradient for the transaction spinner. The default tone retains the original blue gradient; the inline small spinner is unchanged.
+交易等待时传入 `tone="green"`，水滴使用项目绿色操作渐变。默认色调保留原蓝色，列表内联的小尺寸水滴不受影响。
+
 ```tsx
 import { ContractLoading } from '@/components/ContractLoading'
 
 <ContractLoading show={contractPending} />
+<ContractLoading show={purchasePending} tone="green" />
 ```

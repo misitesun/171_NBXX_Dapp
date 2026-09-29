@@ -13,3 +13,5 @@ import { useDappStore } from '@/stores'
 
 const walletAddress = useDappStore((state) => state.walletAddress)
 ```
+
+NodeXX 新增 auth store，由路由门槛、授权页与首页共同消费；详见 auth/README.md。

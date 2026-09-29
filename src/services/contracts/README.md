@@ -55,3 +55,7 @@ EIP-7702 委托账户需要这条规则，因为 `eth_call` 缺少 `account` / `
 
 Every new user-context read must include regression tests for business-layer address passing, `readDappContract` forwarding to viem `readContract`, and public reads staying account-free.
 每次新增依赖用户上下文的读取，都必须补回归测试，覆盖业务层传入地址、`readDappContract` 透传给 viem `readContract`，以及公共读取不传 `account`。
+
+## NodeXX 当前集成
+
+`nbxxNodeAbi.ts` 原样保存提供的 ABI；`config.ts` 从 env 校验 USDT/NBXXNode 地址；`nbxxNode.ts` 提供公开价格/支付代币读取、按显式钱包地址查询 `hasPurchased(address user)`，以及单参数 buy 写入。该购买状态查询使用 `user` 参数，不依赖 `msg.sender`，因此不传 `account`。业务等级、授权顺序与页面刷新位于 `src/features/purchase`，详情见 `docs/contracts/nbxx-node-purchase.md`。

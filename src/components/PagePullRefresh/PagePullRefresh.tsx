@@ -7,6 +7,7 @@ import {
     type ReactNode,
     type TouchEvent,
 } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import { Icon } from '@/components/Icon'
 import { DropletLoading } from '@/components/DropletLoading'
@@ -77,6 +78,7 @@ function sleep(ms: number): Promise<void> {
 }
 
 export function PagePullRefresh(props: PagePullRefreshProps) {
+    const { t } = useTranslation()
     const {
         children,
         enabled = true,
@@ -419,14 +421,14 @@ export function PagePullRefresh(props: PagePullRefreshProps) {
                             loadMoreRegistration.loadingIndicator === 'droplet' ? (
                                 <DropletLoading
                                     size="small"
-                                    ariaLabel="正在加载更多"
+                                    ariaLabel={t('正在加载更多')}
                                 />
                             ) : (
-                                <><Icon name="refresh" className="page-pull-refresh__load-more-icon" />加载中...</>
+                                <><Icon name="refresh" className="page-pull-refresh__load-more-icon" />{t('加载中...')}</>
                             )
                         ) : loadMoreRegistration.hasMore ? (
                             <span aria-hidden="true" />
-                        ) : '没有更多了'}
+                        ) : t('没有更多了')}
                     </div>
                 ) : null}
             </div>

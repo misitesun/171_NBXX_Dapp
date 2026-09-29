@@ -20,3 +20,9 @@ Project-specific referral, login-account, preference or cache keys should be add
 
 If a real project uses referral links and must retain a code while switching addresses in one wallet app, use this module's safe `localStorage` helpers for a project-owned key. A non-empty code on the current link takes priority and replaces the saved value; without one, login reads the saved value. Successful login, account changes and Token invalidation do not automatically remove it. The project authentication document defines the key and any explicit removal policy; the template has no referral key.
 若真实项目使用邀请链接，并需要在同一钱包 App 切换地址后继续使用邀请码，应通过本模块的安全 `localStorage` 读写方法保存项目专属键：当前链接的非空邀请码优先并覆盖保存值，链接没有邀请码时读取保存值；登录成功、账号切换和 Token 失效不自动删除。具体键名和显式清理时机由项目鉴权文档确定，模板本身不预置邀请码键。
+
+## NodeXX 邀请来源
+
+`referral.ts` 维护项目独立键 NBXX_REFERRAL_CODE；只缓存登录 ref，不能作为本人 referral_code。Token 与钱包地址沿用现有服务，不由页面直接访问 localStorage。
+
+`resolveReferralCode(pathRef, search)` 依次读取非空路由邀请码、旧query邀请码和缓存。React Router已解码的pathRef不再次解码；空来源不覆盖缓存。授权页在读取后通过setReferralCode保存。

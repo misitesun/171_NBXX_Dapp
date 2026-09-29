@@ -18,4 +18,20 @@
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
     }
+
+    &__panel.dropdown__panel {
+        border: 2px solid var(--app-color);
+        background: linear-gradient(135deg, rgb(255 255 255 / 8%), transparent), rgb(1 14 24 / 58%);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        box-shadow: 0 16px 40px rgb(0 0 0 / 28%), inset 0 1px 0 rgb(255 255 255 / 12%);
+
+        .dropdown__option--selected,
+        .dropdown__option:hover,
+        .dropdown__option:focus-visible {
+            background: var(--app-action-soft-gradient);
+        }
+
+        .dropdown__option--selected { color: var(--app-color); }
+    }
 }

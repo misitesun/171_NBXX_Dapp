@@ -9,6 +9,7 @@ import {
     type ReactNode,
 } from 'react'
 import { createPortal } from 'react-dom'
+import { useTranslation } from 'react-i18next'
 
 import { Icon } from '@/components/Icon'
 import { getViewportWidthPx } from '@/shared/viewport/getViewportWidthPx'
@@ -75,7 +76,7 @@ export function Dropdown({
     defaultValue,
     open,
     defaultOpen = false,
-    placeholder = '请选择',
+    placeholder,
     triggerLabel,
     contentAlign = 'left',
     showIcon = true,
@@ -89,6 +90,7 @@ export function Dropdown({
     onChange,
     onOpenChange,
 }: DropdownProps) {
+    const { t } = useTranslation()
     const triggerRef = useRef<HTMLElement>(null)
     const panelRef = useRef<HTMLDivElement>(null)
     const panelId = useId()
@@ -106,7 +108,7 @@ export function Dropdown({
     const selectedOption = options.find((option) => option.value === currentValue)
     const hasOptionIcon = showIcon && options.some((option) => option.icon !== undefined)
     const isTriggerDisabled = disabled || options.length === 0
-    const triggerText = triggerLabel ?? selectedOption?.label ?? placeholder
+    const triggerText = triggerLabel ?? selectedOption?.label ?? placeholder ?? t('请选择')
 
     const dropdownClassName = [
         'dropdown',
@@ -302,7 +304,7 @@ export function Dropdown({
                         <button
                             type="button"
                             className={maskClassNames}
-                            aria-label="关闭下拉菜单"
+                            aria-label={t('关闭下拉菜单')}
                             onClick={closeDropdown}
                         />
 
@@ -310,7 +312,7 @@ export function Dropdown({
                             ref={panelRef}
                             id={panelId}
                             role="listbox"
-                            aria-label="下拉选项"
+                            aria-label={t('下拉选项')}
                             className={panelClassNames}
                             style={panelStyle}
                         >

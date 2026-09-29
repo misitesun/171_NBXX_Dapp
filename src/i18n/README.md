@@ -39,8 +39,8 @@ All enabled languages are defined in `APP_LANGUAGES` inside `config.ts`.
 This project currently enables Simplified Chinese (`zh-Hans`), Traditional Chinese (`zh-Hant`), Japanese (`ja`), Korean (`ko`) and English (`en`).
 当前项目只开放简体中文（`zh-Hans`）、繁體中文（`zh-Hant`）、日本語（`ja`）、한국어（`ko`）和 English（`en`）。
 
-Each item contains dynamic imports for both common resource packages.
-每个数组项都包含两个 common 资源包的动态 import。
+Each item dynamically loads two common packages and the matching project package.
+每个数组项动态加载两个 common 资源包和对应 project 资源包；合并顺序为 common、dappH5、project。
 
 The template enables i18n by default through `APP_CONFIG.enableI18n`.
 模板通过 `APP_CONFIG.enableI18n` 默认开启多语言。
@@ -67,8 +67,10 @@ Do not restore legacy custom codes such as `zh`, `hk` or `ma`.
 - `locales/common/*.json`：通用按钮、状态、复制、刷新和时间文案。
 - `locales/common/dappH5/*.json`: DApp wallet, network, signature, approval, transaction, H5 network, empty state, upload and submit text.
 - `locales/common/dappH5/*.json`：DApp 钱包、网络、签名、授权、交易，以及 H5 网络、空状态、上传和提交文案。
-- Project-only copy should be added later under `locales/project/` and merged by each language loader.
-- 项目独有文案后续应新增到 `locales/project/`，并在对应语言 loader 中合并。
+- Project-only copy lives under `locales/project/` and is merged by each language loader.
+- 项目独有文案保存在 `locales/project/`，并在对应语言 loader 中合并。首页使用 home.* key 和插值参数。
+- Shared component defaults and accessibility labels use keys from `locales/common/`; project navigation labels use `locales/project/`.
+- 公共组件默认文案和无障碍标签使用 `locales/common/`；项目导航文案使用 `locales/project/`。
 - Do not put one-off business copy into common resources.
 - 不要把一次性业务文案加入 common 资源。
 
@@ -86,3 +88,7 @@ The frontend and backend should use the same standard language codes.
 
 When i18n is enabled, the request layer reads the current language and sends it through the `lang` request header.
 开启多语言时，请求层会读取当前语言，并通过 `lang` 请求头传给后端。
+
+## 当前PHP语言契约
+
+当前docs/api.md支持zh-CN/zh-TW/en-US，请求层getRequestLanguage将zh-Hans映射为zh-CN，zh-Hant映射为zh-TW，en/ja/ko使用en-US错误文案。UI及缓存继续使用原有五种标准语言代码；关闭i18n仍不发送lang头。

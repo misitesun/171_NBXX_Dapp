@@ -10,7 +10,11 @@ import {
     useNavigate,
 } from 'react-router'
 
-import { HomePage, MainLayout } from '@/pages/main'
+import { MainLayout } from '@/pages/main'
+import { AuthenticatedHomePage } from '@/pages/main/home/AuthenticatedHomePage.tsx'
+import { LoginPage } from '@/pages/auth/login/LoginPage.tsx'
+import { mountAuthSession } from '@/features/auth/session.ts'
+import { useAuthStore } from '@/stores/auth/store.ts'
 import { SHOWCASE_ROUTE_ELEMENTS } from '@/showcase/router/index.ts'
 
 import { AppBrowserRouter } from './AppBrowserRouter.tsx'
@@ -25,6 +29,23 @@ function RouterNavigationBridge() {
     }), [navigate])
 
     return null
+}
+
+function AuthSession() {
+    useEffect(() => mountAuthSession(), [])
+    return null
+}
+
+function RequireAuthentication() {
+    const status = useAuthStore(state => state.status)
+    const location = useLocation()
+    if (status !== 'signedIn') return <Navigate to={`${ROUTE_PATH.login}${location.search}`} replace />
+    return <MainLayout />
+}
+
+function RootRedirect() {
+    const { search } = useLocation()
+    return <Navigate to={`${ROUTE_PATH.home}${search}`} replace />
 }
 
 function RouteScrollReset() {
@@ -53,14 +74,17 @@ export function AppRouter() {
     return (
         <AppBrowserRouter>
             <RouterNavigationBridge />
+            <AuthSession />
             <RouteScrollReset />
             <Routes>
-                <Route path={ROUTE_PATH.root} element={<Navigate to={ROUTE_PATH.home} replace />} />
-                <Route element={<MainLayout />}>
-                    <Route path={ROUTE_PATH.home.slice(1)} element={<HomePage />} />
+                <Route path={ROUTE_PATH.root} element={<RootRedirect />} />
+                <Route path={ROUTE_PATH.login} element={<LoginPage />} />
+                <Route element={<RequireAuthentication />}>
+                    <Route path={ROUTE_PATH.home.slice(1)} element={<AuthenticatedHomePage />} />
                 </Route>
 
                 {SHOWCASE_ROUTE_ELEMENTS}
+                <Route path={ROUTE_PATH.referral} element={<LoginPage />} />
 
                 <Route path="*" element={<Navigate to={ROUTE_PATH.home} replace />} />
             </Routes>

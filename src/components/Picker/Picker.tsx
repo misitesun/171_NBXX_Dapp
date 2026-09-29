@@ -5,6 +5,7 @@ import {
     useState,
     type ReactNode,
 } from 'react'
+import { useTranslation } from 'react-i18next'
 import type { Swiper as SwiperInstance } from 'swiper/types'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -80,8 +81,8 @@ function getOptionLabel(option: PickerOption): ReactNode {
 export function Picker({
     show,
     options,
-    title = '请选择',
-    confirmText = '确定',
+    title,
+    confirmText,
     emptyText,
     value,
     defaultIndex = 0,
@@ -94,6 +95,9 @@ export function Picker({
     onConfirm,
     renderOption,
 }: PickerProps) {
+    const { t } = useTranslation()
+    const pickerTitle = title ?? t('请选择')
+    const pickerConfirmText = confirmText ?? t('确定')
     const swiperRef = useRef<SwiperInstance | null>(null)
     const isControlled = value !== undefined
     const [innerIndex, setInnerIndex] = useState(() => clampIndex(defaultIndex, options.length, allowEmpty))
@@ -183,7 +187,7 @@ export function Picker({
         >
             <div className={pickerClassName}>
                 <div className="picker__header">
-                    <div className="picker__title size-32 bold-6">{title}</div>
+                    <div className="picker__title size-32 bold-6">{pickerTitle}</div>
                     <button
                         type="button"
                         className="picker__close"
@@ -227,7 +231,7 @@ export function Picker({
                         onClick={handleConfirm}
                         disabled={options.length <= 0}
                     >
-                        {confirmText}
+                        {pickerConfirmText}
                     </button>
                 </div>
             </div>

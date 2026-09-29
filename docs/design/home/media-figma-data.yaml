@@ -1,0 +1,135 @@
+NAME: "外包"
+
+GLOBAL_VARS:
+layout_0d8e6fe2:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 46
+    y: 15
+  dimensions:
+    width: 88
+    height: 30
+layout_8fbf33d4:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 42
+    y: 15
+  dimensions:
+    width: 96
+    height: 30
+layout_1ccd8b0d:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 40
+    y: 15
+  dimensions:
+    width: 100
+    height: 30
+layout_35cee012:
+  mode: none
+  sizing: {}
+  locationRelativeToParent:
+    x: 43
+    y: 15
+  dimensions:
+    width: 94
+    height: 30
+
+ELEMENTS:
+EL-0b11f12f:
+  type: GROUP
+  layout:
+    mode: none
+    sizing:
+      horizontal: fixed
+      vertical: fixed
+    dimensions:
+      width: 180
+      height: 60
+  borderRadius: 0px 0px 0px 0px
+EL-f6578983:
+  type: RECTANGLE
+  layout:
+    mode: none
+    sizing: {}
+    locationRelativeToParent:
+      x: 0
+      y: 0
+    dimensions:
+      width: 180
+      height: 60
+  fills:
+    - rgba(255, 255, 255, 0.1)
+  strokes:
+    - rgba(255, 255, 255, 0.2)
+  strokeWeight: 1px
+  borderRadius: 10px
+
+NODES:
+[FRAME] #30204:3164 layout={"mode":"none","sizing":{}} fills=["#010E18"]
+  [FRAME] #30204:2970 layout={"mode":"row","alignItems":"center","gap":"20px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":61,"y":60}}
+    [GROUP] #30204:2971 template=EL-0b11f12f
+      [RECTANGLE] #30204:2972 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3162 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.014037058688700199],[0,0.11325027793645859,0.13137032091617584]],"filenameSuffix":"30129b"}}]
+    [GROUP] #30204:2974 template=EL-0b11f12f
+      [RECTANGLE] #30204:2975 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3339 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":28,"y":22},"dimensions":{"width":124,"height":15}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1863100528717041,0,0.2006908506155014],[0,0.045912276953458786,0.16197851300239563]],"filenameSuffix":"2a9e56"}}]
+    [GROUP] #30204:2977 template=EL-0b11f12f
+      [RECTANGLE] #30204:2978 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3341 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.4181412160396576],[0,0.11325027793645859,0.12805938720703125]],"filenameSuffix":"3858dd"}}]
+    [GROUP] #30204:2980 template=EL-0b11f12f
+      [RECTANGLE] #30204:2981 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3343 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.6099212765693665],[0,0.11325027793645859,0.13137032091617584]],"filenameSuffix":"60434f"}}]
+    [GROUP] #30204:2983 template=EL-0b11f12f
+      [RECTANGLE] #30204:2984 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3345 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":44,"y":15},"dimensions":{"width":91,"height":30}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16954214870929718,0,0.8092986345291138],[0,0.11325028538703918,0.12577268481254578]],"filenameSuffix":"606ce4"}}]
+    [GROUP] #30204:3048 template=EL-0b11f12f
+      [RECTANGLE] #30204:3049 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3347 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.014037058688700199],[0,0.11325027793645859,0.34877151250839233]],"filenameSuffix":"1bdfad"}}]
+    [GROUP] #30204:3052 template=EL-0b11f12f
+      [RECTANGLE] #30204:3053 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3349 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":38,"y":15},"dimensions":{"width":104,"height":30}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.19376245141029358,0,0.19849370419979095],[0,0.11325028538703918,0.34645047783851624]],"filenameSuffix":"466e42"}}]
+    [GROUP] #30204:3056 template=EL-0b11f12f
+      [RECTANGLE] #30204:3057 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3351 layout=layout_8fbf33d4 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17885765433311462,0,0.4119400382041931],[0,0.11325028538703918,0.3466213643550873]],"filenameSuffix":"17c787"}}]
+    [GROUP] #30204:3060 template=EL-0b11f12f
+      [RECTANGLE] #30204:3061 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3353 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.6173848509788513],[0,0.11325027793645859,0.3439779579639435]],"filenameSuffix":"2c318a"}}]
+    [GROUP] #30204:3064 template=EL-0b11f12f
+      [RECTANGLE] #30204:3065 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3359 layout=layout_8fbf33d4 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17885765433311462,0,0.8065859079360962],[0,0.11325028538703918,0.34848129749298096]],"filenameSuffix":"590501"}}]
+  [FRAME] #30204:2986 layout={"mode":"row","alignItems":"center","gap":"20px","sizing":{"horizontal":"hug","vertical":"hug"},"locationRelativeToParent":{"x":61,"y":140}}
+    [GROUP] #30204:2987 template=EL-0b11f12f
+      [RECTANGLE] #30204:2988 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3381 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.014811974950134754],[0,0.11325027793645859,0.5664336681365967]],"filenameSuffix":"5ac36b"}}]
+    [GROUP] #30204:2996 template=EL-0b11f12f
+      [RECTANGLE] #30204:2997 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3379 layout=layout_1ccd8b0d fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1863100528717041,0,0.20365530252456665],[0,0.11325028538703918,0.5648826956748962]],"filenameSuffix":"620b3b"}}]
+    [GROUP] #30204:3000 template=EL-0b11f12f
+      [RECTANGLE] #30204:3001 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3377 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.4145675003528595],[0,0.11325028538703918,0.5651955008506775]],"filenameSuffix":"678cd0"}}]
+    [GROUP] #30204:3016 template=EL-0b11f12f
+      [RECTANGLE] #30204:3017 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3375 layout=layout_1ccd8b0d fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1863100528717041,0,0.6066747903823853],[0,0.11325028538703918,0.5668824315071106]],"filenameSuffix":"78c8b3"}}]
+    [GROUP] #30204:3032 template=EL-0b11f12f
+      [RECTANGLE] #30204:3033 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3373 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":45,"y":15},"dimensions":{"width":90,"height":30}} fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.1676790416240692,0,0.815346360206604],[0,0.11325028538703918,0.5609543919563293]],"filenameSuffix":"728fe8"}}]
+    [GROUP] #30204:3068 template=EL-0b11f12f
+      [RECTANGLE] #30204:3069 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3371 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.01372393686324358],[0,0.11325029283761978,0.7767006754875183]],"filenameSuffix":"2fd57f"}}]
+    [GROUP] #30204:3085 template=EL-0b11f12f
+      [RECTANGLE] #30204:3086 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3369 layout=layout_0d8e6fe2 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.16395284235477448,0,0.21356143057346344],[0,0.11325027793645859,0.7707014679908752]],"filenameSuffix":"19264b"}}]
+    [GROUP] #30204:3102 template=EL-0b11f12f
+      [RECTANGLE] #30204:3103 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3367 layout=layout_8fbf33d4 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17885765433311462,0,0.41129934787750244],[0,0.11325028538703918,0.7733964920043945]],"filenameSuffix":"7c9389"}}]
+      [FRAME] "imTokenLogo 1" #30204:3104 layout={"mode":"none","sizing":{},"locationRelativeToParent":{"x":45,"y":22},"dimensions":{"width":89,"height":16}} fills=[]
+    [GROUP] #30204:3119 template=EL-0b11f12f
+      [RECTANGLE] #30204:3120 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3365 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.6172506213188171],[0,0.11325028538703918,0.7714288830757141]],"filenameSuffix":"388793"}}]
+    [GROUP] #30204:3136 template=EL-0b11f12f
+      [RECTANGLE] #30204:3137 template=EL-f6578983
+      [RECTANGLE] "image 4926" #30204:3360 layout=layout_35cee012 fills=[{"type":"IMAGE","imageRef":"8e086264a99fa583c2b85dc616e8057b8cfe0838","scaleMode":"STRETCH","objectFit":"fill","isBackground":false,"imageDownloadArguments":{"needsCropping":true,"requiresImageDimensions":false,"cropTransform":[[0.17513145506381989,0,0.8137515783309937],[0,0.11325028538703918,0.7690830826759338]],"filenameSuffix":"4f1fe6"}}]

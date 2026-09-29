@@ -11,3 +11,4 @@ export {
     setWalletAddress,
 } from './common.ts'
 export { getToken, removeToken, setToken } from './token.ts'
+export { getReferralCode, setReferralCode } from './referral.ts'

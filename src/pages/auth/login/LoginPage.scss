@@ -1,0 +1,41 @@
+.authorization-page {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #040404;
+    padding: 30px;
+
+    &__galaxy {
+        /* layout-exception: background-art HU_CHAIN galaxy fills the authorization viewport */
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        canvas { width: 100%; height: 100%; display: block; }
+    }
+    &__content {
+        position: relative;
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0;
+        animation-delay: 0.3s;
+    }
+    &__logo { width: 320px; height: 160px; object-fit: contain; }
+    &__tips {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #8D9094;
+        animation-delay: 0.3s;
+    }
+
+    @media (prefers-reduced-motion: reduce) { &__content, &__tips { animation: none; } }
+}

@@ -1,0 +1,947 @@
+{
+  "fileKey": "NVwAAv12WZx1LiCTqPMNWD",
+  "nodeId": "30192:718",
+  "reference": "docs/design/home/figma-home-reference.png",
+  "frame": {
+    "width": 750,
+    "height": 4131
+  },
+  "source": "get_figma_data; download_figma_images",
+  "assets": [
+    {
+      "nodeId": "30192:906",
+      "fileName": "footer-space-background.png",
+      "imageRef": "2a628d9f042db54a83c417f09d46be5266b6bfa6",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0.39068132638931274,
+          0.6091005206108093
+        ]
+      ],
+      "filenameSuffix": "3e7247",
+      "path": "src/assets/home/footer-space-background-3e7247.png"
+    },
+    {
+      "nodeId": "30192:908",
+      "fileName": "hero-space-background.png",
+      "imageRef": "3b9d6e0446e67e5facb43f73e204d89a2eeca064",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          1,
+          0,
+          -7.105427357601002e-15
+        ],
+        [
+          0,
+          0.46785929799079895,
+          0.16043712198734283
+        ]
+      ],
+      "filenameSuffix": "68905c",
+      "path": "src/assets/home/hero-space-background-68905c.png"
+    },
+    {
+      "nodeId": "30204:2566",
+      "fileName": "nodexx-wordmark.png",
+      "imageRef": "8c7173043b399d25b649ea94faf0378d82ec3173",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "3ba1e4",
+      "cropTransform": [
+        [
+          0.923954427242279,
+          0,
+          0.04752851650118828
+        ],
+        [
+          0,
+          0.6463414430618286,
+          0.18902438879013062
+        ]
+      ],
+      "path": "public/brand/nodexx-wordmark.png"
+    },
+    {
+      "nodeId": "30192:911",
+      "fileName": "nft-crown.png",
+      "imageRef": "eb8fc782a306d0fbdcade638080d04a80456d9bc",
+      "needsCropping": false,
+      "requiresImageDimensions": false,
+      "path": "src/assets/home/nft-crown.png"
+    },
+    {
+      "nodeId": "30192:969",
+      "fileName": "hero-orb-left.png",
+      "imageRef": "b97a69db297b5ce6b0ab90f34942653b46ba445d",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.6603830456733704,
+          0,
+          0.17494873702526093
+        ],
+        [
+          0,
+          0.8383838534355164,
+          0.08080808073282242
+        ]
+      ],
+      "filenameSuffix": "5ad938",
+      "path": "src/assets/home/hero-orb-left-5ad938.png"
+    },
+    {
+      "nodeId": "30192:971",
+      "fileName": "hero-orb-right.png",
+      "imageRef": "efe53283f45c83e4a49670ab8d15bed60bb71736",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.8088787198066711,
+          0,
+          0.10855675488710403
+        ],
+        [
+          0,
+          0.8837000131607056,
+          0.05679304897785187
+        ]
+      ],
+      "filenameSuffix": "39d109",
+      "path": "src/assets/home/hero-orb-right-39d109.png"
+    },
+    {
+      "nodeId": "30192:964",
+      "fileName": "laurel-right.png",
+      "imageRef": "ebcc536e3ffc93170caebf220b5b77018b5434e6",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "6581b6",
+      "cropTransform": [
+        [
+          0.6387882232666016,
+          0,
+          0.18725988268852234
+        ],
+        [
+          0,
+          0.9275361895561218,
+          0.014492753893136978
+        ]
+      ],
+      "path": "src/assets/home/laurel-right-6581b6.png"
+    },
+    {
+      "nodeId": "30192:962",
+      "fileName": "laurel-left.png",
+      "imageRef": "ebcc536e3ffc93170caebf220b5b77018b5434e6",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "6581b6",
+      "cropTransform": [
+        [
+          0.6387882232666016,
+          0,
+          0.18725988268852234
+        ],
+        [
+          0,
+          0.9275361895561218,
+          0.014492753893136978
+        ]
+      ],
+      "path": "src/assets/home/laurel-left-6581b6.png"
+    },
+    {
+      "nodeId": "30192:979",
+      "fileName": "nft-basic-card-background.png",
+      "imageRef": "3745e082d6943c2cf19aaa1595da096784dfde3f",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.7266666889190674,
+          0,
+          0.1366666704416275
+        ],
+        [
+          0,
+          0.5618239045143127,
+          0.3635144531726837
+        ]
+      ],
+      "filenameSuffix": "7f6f7c",
+      "path": "src/assets/home/nft-basic-card-background-7f6f7c.png"
+    },
+    {
+      "nodeId": "30204:2581",
+      "fileName": "nft-basic-art.png",
+      "imageRef": "fd971ee9f9714a2e5e244a3b0d1de669490707be",
+      "needsCropping": false,
+      "requiresImageDimensions": false,
+      "path": "src/assets/home/nft-basic-art.png"
+    },
+    {
+      "nodeId": "30192:1046",
+      "fileName": "nft-premium-card-background.png",
+      "imageRef": "c48b6d1b5f9591ee820b569060e9748e97aba1fa",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.6494830250740051,
+          0,
+          0.1753425896167755
+        ],
+        [
+          0,
+          0.502164363861084,
+          0.40821412205696106
+        ]
+      ],
+      "filenameSuffix": "5be090",
+      "path": "src/assets/home/nft-premium-card-background-5be090.png"
+    },
+    {
+      "nodeId": "30204:2583",
+      "fileName": "nft-premium-art.png",
+      "imageRef": "ef364732a1ce8c6a2c0007aa1c33634f442470fe",
+      "needsCropping": false,
+      "requiresImageDimensions": false,
+      "path": "src/assets/home/nft-premium-art.png"
+    },
+    {
+      "nodeId": "30192:1053",
+      "fileName": "selection-checked.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1304163783788681,
+          0,
+          0.7979592680931091
+        ],
+        [
+          0,
+          0.17807231843471527,
+          0.08207036554813385
+        ]
+      ],
+      "filenameSuffix": "d292b9",
+      "path": "src/assets/home/selection-checked-d292b9.png"
+    },
+    {
+      "nodeId": "30192:991",
+      "fileName": "benefit-dividend.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "63634c",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.05512000992894173
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.284673810005188
+        ]
+      ],
+      "path": "src/assets/home/benefit-dividend-63634c.png"
+    },
+    {
+      "nodeId": "30192:996",
+      "fileName": "benefit-buy-fee.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "588b98",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.2888610064983368
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.284673810005188
+        ]
+      ],
+      "path": "src/assets/home/benefit-buy-fee-588b98.png"
+    },
+    {
+      "nodeId": "30192:1003",
+      "fileName": "benefit-sell-fee.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "5c4f28",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.5386394262313843
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.284673810005188
+        ]
+      ],
+      "path": "src/assets/home/benefit-sell-fee-5c4f28.png"
+    },
+    {
+      "nodeId": "30192:1015",
+      "fileName": "benefit-mining.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "37ed27",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.7832104563713074
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.284673810005188
+        ]
+      ],
+      "path": "src/assets/home/benefit-mining-37ed27.png"
+    },
+    {
+      "nodeId": "30192:1020",
+      "fileName": "benefit-airdrop.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "1f30d9",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.05390973389148712
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.5050546526908875
+        ]
+      ],
+      "path": "src/assets/home/benefit-airdrop-1f30d9.png"
+    },
+    {
+      "nodeId": "30192:1026",
+      "fileName": "benefit-vote.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "54b405",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.2906672954559326
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.5091833472251892
+        ]
+      ],
+      "path": "src/assets/home/benefit-vote-54b405.png"
+    },
+    {
+      "nodeId": "30192:1031",
+      "fileName": "benefit-tax.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "55d3b1",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.5370884537696838
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.513029932975769
+        ]
+      ],
+      "path": "src/assets/home/benefit-tax-55d3b1.png"
+    },
+    {
+      "nodeId": "30192:1036",
+      "fileName": "benefit-credit.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "filenameSuffix": "46d70f",
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.7822491526603699
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.5086355805397034
+        ]
+      ],
+      "path": "src/assets/home/benefit-credit-46d70f.png"
+    },
+    {
+      "nodeId": "30204:1253",
+      "fileName": "assurance-contract.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.056993793696165085
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.7402715682983398
+        ]
+      ],
+      "filenameSuffix": "274b00",
+      "path": "src/assets/home/assurance-contract-274b00.png"
+    },
+    {
+      "nodeId": "30204:1257",
+      "fileName": "assurance-limited.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.29315492510795593
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.7402715682983398
+        ]
+      ],
+      "filenameSuffix": "784115",
+      "path": "src/assets/home/assurance-limited-784115.png"
+    },
+    {
+      "nodeId": "30204:1260",
+      "fileName": "assurance-shareholder.png",
+      "imageRef": "b4cdcd9ded7cfecf7ad6b14d43daac24881ba8e5",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1794225126504898,
+          0,
+          0.5339627265930176
+        ],
+        [
+          0,
+          0.2371741235256195,
+          0.7402715682983398
+        ]
+      ],
+      "filenameSuffix": "5b7961",
+      "path": "src/assets/home/assurance-shareholder-5b7961.png"
+    },
+    {
+      "nodeId": "30204:3424",
+      "fileName": "community-qr.png",
+      "imageRef": "89146e0b3cef7e0d7dea9564a1bf6d7dcbd41575",
+      "needsCropping": false,
+      "requiresImageDimensions": false,
+      "path": "src/assets/home/community-qr.png"
+    },
+    {
+      "nodeId": "30192:730",
+      "fileName": "language-globe.svg",
+      "path": "src/assets/common/language-globe.svg"
+    },
+    {
+      "nodeId": "30204:1242",
+      "fileName": "purchase-bag.svg",
+      "path": "src/assets/home/purchase-bag.svg"
+    },
+    {
+      "nodeId": "30204:1245",
+      "fileName": "purchase-arrow.svg",
+      "path": "src/assets/home/purchase-arrow.svg"
+    },
+    {
+      "nodeId": "30192:1058",
+      "fileName": "section-line-left.svg",
+      "path": "src/assets/home/section-line-left.svg"
+    },
+    {
+      "nodeId": "30192:1061",
+      "fileName": "section-line-right.svg",
+      "path": "src/assets/home/section-line-right.svg"
+    },
+    {
+      "nodeId": "30204:3430",
+      "fileName": "media-partner-row-top-01.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.014037058688700199
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.13137032091617584
+        ]
+      ],
+      "filenameSuffix": "30129b",
+      "path": "src/assets/home/media-partner-row-top-01-30129b.png"
+    },
+    {
+      "nodeId": "30204:3433",
+      "fileName": "media-partner-row-top-02.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1863100528717041,
+          0,
+          0.2006908506155014
+        ],
+        [
+          0,
+          0.045912276953458786,
+          0.16197851300239563
+        ]
+      ],
+      "filenameSuffix": "2a9e56",
+      "path": "src/assets/home/media-partner-row-top-02-2a9e56.png"
+    },
+    {
+      "nodeId": "30204:3436",
+      "fileName": "media-partner-row-top-03.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.4181412160396576
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.12805938720703125
+        ]
+      ],
+      "filenameSuffix": "3858dd",
+      "path": "src/assets/home/media-partner-row-top-03-3858dd.png"
+    },
+    {
+      "nodeId": "30204:3439",
+      "fileName": "media-partner-row-top-04.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.6099212765693665
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.13137032091617584
+        ]
+      ],
+      "filenameSuffix": "60434f",
+      "path": "src/assets/home/media-partner-row-top-04-60434f.png"
+    },
+    {
+      "nodeId": "30204:3442",
+      "fileName": "media-partner-row-top-05.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16954214870929718,
+          0,
+          0.8092986345291138
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.12577268481254578
+        ]
+      ],
+      "filenameSuffix": "606ce4",
+      "path": "src/assets/home/media-partner-row-top-05-606ce4.png"
+    },
+    {
+      "nodeId": "30204:3445",
+      "fileName": "media-partner-row-top-06.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.014037058688700199
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.34877151250839233
+        ]
+      ],
+      "filenameSuffix": "1bdfad",
+      "path": "src/assets/home/media-partner-row-top-06-1bdfad.png"
+    },
+    {
+      "nodeId": "30204:3448",
+      "fileName": "media-partner-row-top-07.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.19376245141029358,
+          0,
+          0.19849370419979095
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.34645047783851624
+        ]
+      ],
+      "filenameSuffix": "466e42",
+      "path": "src/assets/home/media-partner-row-top-07-466e42.png"
+    },
+    {
+      "nodeId": "30204:3451",
+      "fileName": "media-partner-row-top-08.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17885765433311462,
+          0,
+          0.4119400382041931
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.3466213643550873
+        ]
+      ],
+      "filenameSuffix": "17c787",
+      "path": "src/assets/home/media-partner-row-top-08-17c787.png"
+    },
+    {
+      "nodeId": "30204:3454",
+      "fileName": "media-partner-row-top-09.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.6173848509788513
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.3439779579639435
+        ]
+      ],
+      "filenameSuffix": "2c318a",
+      "path": "src/assets/home/media-partner-row-top-09-2c318a.png"
+    },
+    {
+      "nodeId": "30204:3457",
+      "fileName": "media-partner-row-top-10.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17885765433311462,
+          0,
+          0.8065859079360962
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.34848129749298096
+        ]
+      ],
+      "filenameSuffix": "590501",
+      "path": "src/assets/home/media-partner-row-top-10-590501.png"
+    },
+    {
+      "nodeId": "30204:3461",
+      "fileName": "media-partner-row-bottom-01.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.014811974950134754
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.5664336681365967
+        ]
+      ],
+      "filenameSuffix": "5ac36b",
+      "path": "src/assets/home/media-partner-row-bottom-01-5ac36b.png"
+    },
+    {
+      "nodeId": "30204:3464",
+      "fileName": "media-partner-row-bottom-02.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1863100528717041,
+          0,
+          0.20365530252456665
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.5648826956748962
+        ]
+      ],
+      "filenameSuffix": "620b3b",
+      "path": "src/assets/home/media-partner-row-bottom-02-620b3b.png"
+    },
+    {
+      "nodeId": "30204:3467",
+      "fileName": "media-partner-row-bottom-03.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17513145506381989,
+          0,
+          0.4145675003528595
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.5651955008506775
+        ]
+      ],
+      "filenameSuffix": "678cd0",
+      "path": "src/assets/home/media-partner-row-bottom-03-678cd0.png"
+    },
+    {
+      "nodeId": "30204:3470",
+      "fileName": "media-partner-row-bottom-04.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1863100528717041,
+          0,
+          0.6066747903823853
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.5668824315071106
+        ]
+      ],
+      "filenameSuffix": "78c8b3",
+      "path": "src/assets/home/media-partner-row-bottom-04-78c8b3.png"
+    },
+    {
+      "nodeId": "30204:3473",
+      "fileName": "media-partner-row-bottom-05.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.1676790416240692,
+          0,
+          0.815346360206604
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.5609543919563293
+        ]
+      ],
+      "filenameSuffix": "728fe8",
+      "path": "src/assets/home/media-partner-row-bottom-05-728fe8.png"
+    },
+    {
+      "nodeId": "30204:3476",
+      "fileName": "media-partner-row-bottom-06.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17513145506381989,
+          0,
+          0.01372393686324358
+        ],
+        [
+          0,
+          0.11325029283761978,
+          0.7767006754875183
+        ]
+      ],
+      "filenameSuffix": "2fd57f",
+      "path": "src/assets/home/media-partner-row-bottom-06-2fd57f.png"
+    },
+    {
+      "nodeId": "30204:3479",
+      "fileName": "media-partner-row-bottom-07.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.16395284235477448,
+          0,
+          0.21356143057346344
+        ],
+        [
+          0,
+          0.11325027793645859,
+          0.7707014679908752
+        ]
+      ],
+      "filenameSuffix": "19264b",
+      "path": "src/assets/home/media-partner-row-bottom-07-19264b.png"
+    },
+    {
+      "nodeId": "30204:3482",
+      "fileName": "media-partner-row-bottom-08.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17885765433311462,
+          0,
+          0.41129934787750244
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.7733964920043945
+        ]
+      ],
+      "filenameSuffix": "7c9389",
+      "path": "src/assets/home/media-partner-row-bottom-08-7c9389.png"
+    },
+    {
+      "nodeId": "30204:3486",
+      "fileName": "media-partner-row-bottom-09.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17513145506381989,
+          0,
+          0.6172506213188171
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.7714288830757141
+        ]
+      ],
+      "filenameSuffix": "388793",
+      "path": "src/assets/home/media-partner-row-bottom-09-388793.png"
+    },
+    {
+      "nodeId": "30204:3489",
+      "fileName": "media-partner-row-bottom-10.png",
+      "imageRef": "8e086264a99fa583c2b85dc616e8057b8cfe0838",
+      "needsCropping": true,
+      "requiresImageDimensions": false,
+      "cropTransform": [
+        [
+          0.17513145506381989,
+          0,
+          0.8137515783309937
+        ],
+        [
+          0,
+          0.11325028538703918,
+          0.7690830826759338
+        ]
+      ],
+      "filenameSuffix": "4f1fe6",
+      "path": "src/assets/home/media-partner-row-bottom-10-4f1fe6.png"
+    },
+    {
+      "nodeId": "30246:2838",
+      "fileName": "twitter-icon.svg",
+      "path": "src/assets/home/twitter-icon.svg",
+      "width": 48,
+      "height": 48,
+      "sourceRevision": "2026-09-29",
+      "reference": "docs/design/home/twitter-figma-reference.png"
+    },
+    {
+      "nodeId": "30285:2986",
+      "fileName": "invite-friends.svg",
+      "path": "src/assets/home/invite-friends.svg",
+      "width": 40,
+      "height": 40,
+      "reference": "docs/design/home/invitation-reference.png"
+    }
+  ]
+}

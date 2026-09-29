@@ -5,3 +5,7 @@
         background: transparent;
     }
 }
+
+.contract-loading--green {
+    --droplet-loading-gradient: var(--app-action-gradient);
+}

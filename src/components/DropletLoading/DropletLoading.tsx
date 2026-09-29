@@ -2,6 +2,7 @@ import {
     useId,
     type CSSProperties,
 } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import './DropletLoading.scss'
 
@@ -19,8 +20,9 @@ export interface DropletLoadingProps {
 export function DropletLoading({
     size = 'regular',
     className = '',
-    ariaLabel = '加载中',
+    ariaLabel,
 }: DropletLoadingProps) {
+    const { t } = useTranslation()
     const generatedId = useId().replace(/:/g, '')
     const filterId = `droplet-loading-${generatedId}`
     const loadingClassName = [
@@ -36,7 +38,7 @@ export function DropletLoading({
         <div
             className={loadingClassName}
             style={filterStyle}
-            aria-label={ariaLabel}
+            aria-label={ariaLabel ?? t('加载中...')}
             role="status"
         >
             <div className="droplet-loading__inner">

@@ -19,6 +19,10 @@ The language list comes directly from `APP_LANGUAGES` and is rendered by the sha
 The enabled options are Simplified Chinese, Traditional Chinese, Japanese, Korean and English. This dropdown uses a transparent, non-blurred mask so the page below remains clearly visible; other `Dropdown` instances keep their default mask.
 当前开放简体中文、繁體中文、日本語、한국어和 English。语言下拉使用透明且无模糊的遮罩，让底部页面保持清晰可见；其他 `Dropdown` 仍使用默认遮罩。
 
+面板通过已有 panelClassName 使用 language-switch__panel 私有样式：深色半透明玻璃背景、24px背景模糊、2px项目绿色边框，选中及悬停项复用项目绿色半透明渐变。尺寸仍经750px设计基准转换，375px对应12px模糊；边框沿用项目转换规则保持2px。保留原有圆角、内边距、选项尺寸、锚点定位和关闭行为，不修改其它 Dropdown 实例。
+
+上述玻璃透明度和模糊为本次样式实现选择，用户截图仅用于指出现有面板及修改方向，没有提供可量测的玻璃参数。
+
 Changing language goes through `changeAppLanguage()`, which updates i18next, localStorage, `<html lang>` and the app store together.
 切换语言会统一走 `changeAppLanguage()`，它会同时更新 i18next、localStorage、`<html lang>` 和 app store。
 
