@@ -1,10 +1,21 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 
-import { formatRelativeTime } from '../src/shared/formatters/formatRelativeTime.ts'
 import { maskEmailAddress } from '../src/shared/formatters/maskEmailAddress.ts'
 import { maskPhoneNumber } from '../src/shared/formatters/maskPhoneNumber.ts'
 import { maskWalletAddress } from '../src/shared/formatters/maskWalletAddress.ts'
+import { registerUiModules } from './hu-ui-render.mjs'
+
+const hooks = registerUiModules()
+const [{ formatRelativeTime }, { appI18n }] = await Promise.all([
+    import('../src/shared/formatters/formatRelativeTime.ts'),
+    import('../src/i18n/instance.ts'),
+])
+await appI18n.init({
+    lng: 'zh-Hans',
+    resources: { 'zh-Hans': { translation: { '昨天': '昨天' } } },
+    keySeparator: false,
+})
 
 test('masks wallet addresses, phone numbers, and email addresses by meaning', () => {
     assert.equal(maskWalletAddress('0x1234567890abcdef'), '0x123****cdef')
@@ -40,3 +51,5 @@ test('formats relative time for today, yesterday, current year, and older years'
     assert.equal(formatRelativeTime('invalid', now), '--')
     assert.equal(formatRelativeTime(undefined, now), '--')
 })
+
+test.after(() => hooks.deregister())

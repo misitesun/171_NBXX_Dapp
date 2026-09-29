@@ -5,6 +5,7 @@
 - ABI：开发者提供 `/Users/sly/Downloads/NBXXNode.json`，原样归档于 `docs/contracts/NBXXNode.json`；TypeScript ABI 与归档逐项一致。
 - 开发者确认 USDT：`0x5FbDB2315678afecb367f032d93F642f64180aa3`。
 - 开发者确认 NBXXNode：`0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9`。
+- 开发者确认正式链为 BSC；正式 USDT：`0x55d398326f99059fF775485246999027B3197955`，正式 NBXXNode：`0xaEa3997B321693e3938D3C46d7938067eE2B6c28`。
 - 开发者确认初级 NFT 为 `buy(1)`、高级为 `buy(2)`，USDT 授权 spender 为 NBXXNode，购买金额使用对应 `PRICE_TYPE_1/2` 的原始整数。
 - 开发者要求沿用已有本地网络，完成代码后由开发者测试。项目现有开发链配置为 `DAPP_LOCAL_CHAIN`（chainId `31337`，原生币 GO），调用使用钱包注入 Provider。截图仅能证明钱包有名为“本地”的网络，不能证明部署或交易结果。
 - 仅实现购买。未接管理、升级、领取、收益、转账等合约操作；价格以外的供应量/权益仍为页面设计配置。
@@ -36,7 +37,7 @@
 ## 配置与测试入口
 
 - `.env.development` 已配置本次 USDT/NBXXNode 地址。`VITE_RPC_URL` 沿用现有值；已有钱包本地网络直接通过 Provider 请求，不另建 HTTP public client。
-- `.env.production` 的 API/RPC 保持为空；当前没有确认生产部署地址，生产 USDT/NBXXNode 地址也保留为空。
+- `.env.production` 配置正式 BSC USDT/NBXXNode 地址；生产 API/RPC（`VITE_BASE_URL`、`VITE_RPC_URL`）保持为空。
 - 钱包应选择项目当前本地链（现有代码 chainId `31337`），准备足够 USDT 与原生币 Gas，登录后选择等级购买。授权不足会出现授权和购买两次钱包确认，额度充足只需购买确认。
 - 开发者手动验证：初级/高级参数、已购买地址按钮禁用与交易前守卫、授权 spender/金额、拒签、链上回退、账户切换、重复点击、购买成功后信息刷新。
 - 本地 mock 测试覆盖 ABI 一致、raw bigint/精度、等级映射、最大授权/跳过授权、余额不足、错误网络/代币、会话切换、重复写入与失败回执。真实部署及钱包交易由开发者验收。

@@ -61,7 +61,7 @@ test('main page config owns the first-level page records', async () => {
 
     assert.match(mainConfigSource, /export const MAIN_PAGE_ITEMS/)
     assert.match(mainConfigSource, /path:\s*ROUTE_PATH\.home/)
-    assert.match(mainConfigSource, /title:\s*'首页'/)
+    assert.match(mainConfigSource, /titleKey:\s*'home\.nav'/)
     assert.doesNotMatch(mainConfigSource, /ROUTE_PATH\.(user|stake|presale|otc)/)
     assert.doesNotMatch(routerRoutesSource, /appRouteItems/)
 })

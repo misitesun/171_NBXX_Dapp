@@ -36,7 +36,7 @@ function setup(options = {}) {
             const call = decodeFunctionData({ abi: contract, data: params[0].data })
             reads.push(call)
             await options.onRead?.(call)
-            const values = { PRICE_TYPE_1: price, PRICE_TYPE_2: price * 2n, usdt: options.token ?? usdt, decimals: 6,
+            const values = { PRICE_TYPE_1: price, PRICE_TYPE_2: price * 2n, usdt: options.token ?? usdt, hasPurchased: false, decimals: 6,
                 balanceOf: options.balance ?? price * 10n, allowance }
             return encodeFunctionResult({ abi: contract, functionName: call.functionName, result: values[call.functionName] })
         }

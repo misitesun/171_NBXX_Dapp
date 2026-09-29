@@ -16,7 +16,7 @@ test('droplet loading exposes the contract visual and a 40px inline variant', as
     assert.match(component, /LOADING_DOTS\.map/)
     assert.match(component, /droplet-loading__dot/)
     assert.match(component, /stdDeviation=\{size === 'small' \? 1\.3 : 10\}/)
-    assert.match(component, /aria-label=\{ariaLabel\}/)
+    assert.match(component, /aria-label=\{ariaLabel \?\? t\('加载中\.\.\.'\)\}/)
     assert.match(component, /role="status"/)
 
     assert.match(styles, /--droplet-loading-size: 300px;/)
@@ -24,7 +24,7 @@ test('droplet loading exposes the contract visual and a 40px inline variant', as
     assert.match(styles, /&--small \{[\s\S]*?--droplet-loading-dot-size: 8px;/)
     assert.match(styles, /filter: var\(--droplet-loading-filter\);/)
     assert.match(styles, /animation: droplet-loading-rotate 3s ease-in-out infinite;/)
-    assert.match(styles, /background-image: linear-gradient\(to right, #50D6FC, #1989F5\);/)
+    assert.match(styles, /--droplet-loading-gradient: linear-gradient\(to right, #50D6FC, #1989F5\);/)
     assert.match(styles, /@keyframes droplet-loading-rotate/)
 
     assert.match(entry, /export \{ DropletLoading \} from '\.\/DropletLoading\.tsx'/)

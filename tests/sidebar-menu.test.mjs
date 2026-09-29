@@ -37,7 +37,7 @@ test('sidebar menu reuses the shared first-level layout menu items', () => {
     assert.match(sidebarSource, /MAIN_PAGE_ITEMS\.map/)
     assert.match(sidebarSource, /key=\{item\.path\}/)
     assert.match(sidebarSource, /to=\{item\.path\}/)
-    assert.match(sidebarSource, /\{item\.title\}/)
+    assert.match(sidebarSource, /\{t\(item\.titleKey\)\}/)
     assert.match(sidebarSource, /onClick=\{handleMenuLinkClick\}/)
     assert.match(sidebarSource, /function handleMenuLinkClick\(\)/)
     assert.match(sidebarSource, /handleMenuLinkClick[\s\S]*onClose\(\)/)

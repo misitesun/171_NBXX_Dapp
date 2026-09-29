@@ -27,7 +27,7 @@ test('contract loading wraps popup and blocks interaction during contract writes
     assert.match(component, /enterAnimation="fadeIn"/)
     assert.match(component, /leaveAnimation="fadeOut"/)
     assert.match(component, /<DropletLoading/)
-    assert.match(component, /className=\{`contract-loading \$\{className\}`\.trim\(\)\}/)
+    assert.match(component, /className=\{`contract-loading\$\{tone === 'green' \? ' contract-loading--green' : ''\} \$\{className\}`\.trim\(\)\}/)
     assert.match(component, /ariaLabel="Contract loading"/)
 
     assert.match(styles, /\.contract-loading-popup/)
