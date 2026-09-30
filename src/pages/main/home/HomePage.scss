@@ -113,10 +113,10 @@ html:has(.home-page) { @include hide-scrollbar; }
         strong { font-size: 40px; font-weight: 600; }
     }
     &__supply { padding: 4px 12px; min-height: 38px; border: 1px solid var(--app-border-medium); border-radius: 999px; color: var(--app-text-secondary); background: rgb(1 14 24 / 80%); line-height: 28px; }
+    &__supply--selected { min-height: 40px; border: 2px solid rgb(180 255 0 / 20%); color: var(--app-lime); }
     &__nft--premium {
         .home-page__nft-info { margin-top: 30px; }
         .home-page__price { height: 48px; line-height: 48px; color: #FAF959; strong { font-size: 32px; } }
-        .home-page__supply { min-height: 40px; border: 2px solid rgb(180 255 0 / 20%); color: var(--app-lime); }
     }
     &__selection {
         /* layout-exception: badge-overlay small selection marker sits on the card corner */
@@ -201,7 +201,7 @@ html:has(.home-page) { @include hide-scrollbar; }
         &:last-child { padding-bottom: 0; margin-bottom: 0; min-height: 68px; background: none; }
     }
     &__benefit-icon { flex: none; width: 48px; height: 48px; border: 1px solid rgb(180 255 0 / 20%); border-radius: 999px; img { width: 38px; height: 38px; object-fit: fill; } }
-    &__benefit-text { flex: 1; min-width: 0; min-height: 34px; color: var(--app-text-muted); line-height: 33.599998474121094px; overflow-wrap: anywhere; }
+    &__benefit-text { flex: 1; min-width: 0; min-height: 34px; color: var(--app-text); line-height: 33.599998474121094px; overflow-wrap: anywhere; }
     &__green { color: var(--app-lime); }
     &__red { color: var(--app-red); }
     &__gold { color: var(--app-yellow); }

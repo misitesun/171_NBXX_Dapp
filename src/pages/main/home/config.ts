@@ -45,7 +45,7 @@ export interface HomePageConfig {
 // Figma 展示参数；价格字符串不参与链上单位转换，指标尚非实时数据。
 export const HOME_PAGE_CONFIG: HomePageConfig = {
     currencySymbol: '$',
-    defaultTier: 'basic',
+    defaultTier: 'premium',
     mediaScrollDurationSeconds: 40,
     performanceUnit: 'USDT',
     invitationText: '0xalifuiewhgouerg564vbfd8sv69a45s8xc4asc4as86cs48sd15sa1c5s',

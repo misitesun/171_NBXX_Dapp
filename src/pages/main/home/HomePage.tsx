@@ -56,7 +56,7 @@ function NftCard({ tier, currency, selected, disabled, onSelect }: {
             <span className="home-page__nft-info">
                 <span className="home-page__nft-name size-24 bold-6">{t(`home.tier.${tier.id}`)}</span>
                 <span className="home-page__price"><span className="size-24">{currency}</span><strong>{tier.price}</strong></span>
-                <span className="home-page__supply size-20">{tier.soldOut ? t('home.soldOut') : t('home.limitedSupply', { supply: tier.supply })}</span>
+                <span className={`home-page__supply size-20${selected ? ' home-page__supply--selected' : ''}`}>{tier.soldOut ? t('home.soldOut') : t('home.limitedSupply', { supply: tier.supply })}</span>
             </span>
         </button>
     )

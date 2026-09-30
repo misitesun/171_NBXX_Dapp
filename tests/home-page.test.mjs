@@ -28,6 +28,7 @@ test('home renders supplied tier values and respects processing/sold-out state i
     try {
         const { HomePage } = await import('../src/pages/main/home/HomePage.tsx')
         const { HOME_PAGE_CONFIG, getHomeTier } = await import('../src/pages/main/home/config.ts')
+        const styles = readFileSync('src/pages/main/home/HomePage.scss', 'utf8')
         const config = {
             ...HOME_PAGE_CONFIG,
             tiers: HOME_PAGE_CONFIG.tiers.map(tier => ({
@@ -35,12 +36,17 @@ test('home renders supplied tier values and respects processing/sold-out state i
                 dailyMiningRate: '2.3%', daoVotes: 17, credit: '9876',
             })),
         }
+        assert.equal(config.defaultTier, 'premium')
+        assert.match(styles, /&__supply--selected\s*\{[^}]*color: var\(--app-lime\)/)
         assert.equal(getHomeTier({ ...config, tiers: [config.tiers[0]] }, 'premium').id, 'basic')
         assert.equal(getHomeTier({ ...config, tiers: [] }, 'premium'), undefined)
         for (const code of codes) {
             const instance = i18next.createInstance()
             await instance.init({ lng: code, resources: { [code]: { translation: messages[code] } }, interpolation: { escapeValue: false } })
             const html = renderToStaticMarkup(createElement(I18nextProvider, { i18n: instance }, createElement(HomePage, { config })))
+            assert.match(html, /home-page__nft--premium home-page__nft--selected"[^>]*aria-pressed="true"/)
+            assert.match(html, /class="home-page__supply size-20 home-page__supply--selected"/)
+            assert.match(html, /class="home-page__supply size-20">/)
             for (const value of ['742', '46', '8.7%', '2.3%', '17', '9876']) assert.ok(html.includes(value), `${code} ${value}`)
             assert.doesNotMatch(html, /{{|home\.benefit\.|home\.tier\./)
             const pending = renderToStaticMarkup(createElement(I18nextProvider, { i18n: instance }, createElement(HomePage, { config, purchasing: true })))
