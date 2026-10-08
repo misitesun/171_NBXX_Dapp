@@ -38,7 +38,7 @@ export interface HomePageConfig {
     invitationText: string
     teamMembers: readonly TeamMember[]
     mediaScrollDurationSeconds: number
-    links: { website: string; social: string }
+    links: { social: string; telegram: string; debox: string }
 }
 
 // Display values from Figma, not contract amounts or live platform statistics.
@@ -57,12 +57,12 @@ export const HOME_PAGE_CONFIG: HomePageConfig = {
         {
             id: 'basic', price: '500', supply: 1500,
             dividendRate: '3%', buyFee: '1.5%', sellFee: '1.5%',
-            dailyMiningRate: '0.5%', daoVotes: 5, taxRate: '2%', credit: '1000',
+            dailyMiningRate: '0.5%', daoVotes: 5, taxRate: '1%', credit: '1000',
         },
         {
             id: 'premium', price: '1000', supply: 500,
             dividendRate: '4%', buyFee: '1.5%', sellFee: '1.5%',
-            dailyMiningRate: '1%', daoVotes: 10, taxRate: '3%', credit: '3000',
+            dailyMiningRate: '1%', daoVotes: 10, taxRate: '2%', credit: '3000',
         },
     ],
     metrics: [
@@ -72,8 +72,9 @@ export const HOME_PAGE_CONFIG: HomePageConfig = {
         { id: 'personal-performance', labelKey: 'home.team.personalPerformanceUnit', value: '74,000.62', featured: false },
     ],
     links: {
-        website: 'https://www.nodexx.co/zh-CN',
-        social: 'https://x.com/NodeXX_cn',
+        social: 'https://x.com/bnxxapk?s=11',
+        telegram: 'https://t.co/plo9EMr0ak',
+        debox: 'https://m.debox.pro/group?id=jj2kzzwd&code=4jdvg695',
     },
 }
 

@@ -25,4 +25,4 @@ Menu labels use project translation keys from `src/i18n/locales/project/` and ar
 
 ## NodeXX 内容适配
 
-顶部仍高100px，保留钱包地址格式化与语言切换。侧栏入口及渲染由 APP_CONFIG.sidebarMenuEnabled 控制，当前按开发者要求关闭。AppBrand 使用横向字标并隐藏独立名称；原图地球作为语言控件内容。未连接显示本地化状态，不伪造设计示例钱包地址。staticPreview 仍隐藏钱包数据。
+顶部仍高100px，保留钱包地址格式化与语言切换。侧栏入口及渲染由 APP_CONFIG.sidebarMenuEnabled 控制，当前按开发者要求关闭。AppBrand 使用金牛 NBXX 正方形 Logo，图片尺寸80×80px（750px基准），隐藏独立名称；原图地球作为语言控件内容。未连接显示本地化状态，不伪造设计示例钱包地址。staticPreview 仍隐藏钱包数据。

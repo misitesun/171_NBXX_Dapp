@@ -24,6 +24,6 @@ Template defaults are starter values, not confirmed project decisions. Record re
 
 ## 品牌展示
 
-`brandWordmarkPath` 是基于 routeBase 的 public 品牌资源路径；`showBrandName=false` 时隐藏独立应用名，复用横向字标。展示资源不修改生产 Logo 就绪标记。首页业务展示参数位于页面同目录 config.ts。
+`brandWordmarkPath` 是基于 routeBase 的 public 品牌资源路径；当前指向 `brand/app-logo.png` 金牛 NBXX 正方形 Logo，顶部、登录页和页脚统一复用。`showBrandName=false` 隐藏独立应用名。首页业务展示参数位于页面同目录 config.ts。
 
 `sidebarMenuEnabled` 控制 sidebar 模式的入口和侧栏渲染，当前开发者要求关闭，设为 false。保留 defaultLayoutMenuType，不切换为 tabbar。

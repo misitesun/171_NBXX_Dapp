@@ -132,14 +132,15 @@ test('new project setup guide records template bootstrapping decisions', () => {
     assert.match(agentRules, /PROJECT_TERMS\.md/)
 })
 
-test('project terminology starts business-neutral and documents the confirmation workflow', () => {
+test('project terminology documents the confirmed project name and confirmation workflow', () => {
     const terms = readFileSync('PROJECT_TERMS.md', 'utf8')
     const agentRules = readFileSync('AGENTS.md', 'utf8')
     const files = collectSourceFiles('src')
 
     assert.match(terms, /intentionally defines no product terms or banned words/)
     assert.match(terms, /基础模板有意不预置任何产品术语或禁用词/)
-    assert.match(terms, /None yet/)
+    assert.match(terms, /开发者确认项目展示名称为 NBXX/)
+    assert.match(terms, /\| NodeXX \/ NOdeXX \| NBXX \|/)
     assert.match(agentRules, /base template defines no product vocabulary/)
     assert.match(agentRules, /基础模板不预置产品词汇/)
     assert.equal(files.length > 0, true)

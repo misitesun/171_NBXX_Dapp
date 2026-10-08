@@ -10,9 +10,8 @@ Before copying visible text from Figma or legacy code, record every confirmed wo
 ## Confirmed terms
 ## 已确认术语
 
-None yet. Add project-specific rows only after the developer confirms them.
-暂无。只有开发者确认后，才添加项目专属规则。
+2026-10-08 开发者确认项目展示名称为 NBXX。
 
 | Source term | Approved term | Scope | Reason |
 | --- | --- | --- | --- |
-| — | — | — | — |
+| NodeXX / NOdeXX | NBXX | 浏览器标题、应用展示名称、各语言项目文案及可访问名称 | 开发者确认更名；不改官网域名、包名或合约标识 |

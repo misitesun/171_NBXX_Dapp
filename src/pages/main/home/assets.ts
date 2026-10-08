@@ -1,4 +1,6 @@
 import footerBackground from '@/assets/home/footer-space-background-3e7247.png'
+import deboxLink from '@/assets/home/debox-link.png'
+import telegramLink from '@/assets/home/telegram-link.png'
 import heroBackground from '@/assets/home/hero-space-background-68905c.png'
 import crown from '@/assets/home/nft-crown.png'
 import orbLeft from '@/assets/home/hero-orb-left-5ad938.png'
@@ -21,7 +23,6 @@ import creditIcon from '@/assets/home/benefit-credit-46d70f.png'
 import contractIcon from '@/assets/home/assurance-contract-274b00.png'
 import limitedIcon from '@/assets/home/assurance-limited-784115.png'
 import shareholderIcon from '@/assets/home/assurance-shareholder-5b7961.png'
-import communityQr from '@/assets/home/community-qr.png'
 import twitterIcon from '@/assets/home/twitter-icon.svg'
 import inviteIcon from '@/assets/home/invite-friends.svg'
 import purchaseBag from '@/assets/home/purchase-bag.svg'
@@ -51,7 +52,7 @@ import partner19 from '@/assets/home/media-partner-row-bottom-10-4f1fe6.png'
 
 export const HOME_ART = {
     heroBackground, footerBackground, crown, orbLeft, orbRight, laurelLeft, laurelRight,
-    checked, communityQr, twitterIcon, inviteIcon, purchaseBag, purchaseArrow, lineLeft, lineRight,
+    checked, twitterIcon, telegramLink, deboxLink, inviteIcon, purchaseBag, purchaseArrow, lineLeft, lineRight,
 }
 
 export const NFT_ART = {

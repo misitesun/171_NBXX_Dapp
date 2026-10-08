@@ -36,7 +36,7 @@ export function AppBrand({
     }
 
     return (
-        <button type="button" className={brandClassName} aria-label={APP_CONFIG.name || 'NodeXX'} onClick={handleBrandClick}>
+        <button type="button" className={brandClassName} aria-label={APP_CONFIG.name || 'NBXX'} onClick={handleBrandClick}>
             <img
                 src={APP_CONFIG.brandWordmarkPath
                     ? `${APP_CONFIG.routeBase}${APP_CONFIG.brandWordmarkPath}`

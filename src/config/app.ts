@@ -34,7 +34,7 @@ export const APP_LOGIN_MODE_OPTIONS = [
 
 export const APP_CONFIG = {
     name: import.meta.env?.VITE_APP_NAME ?? '',
-    brandWordmarkPath: 'brand/nodexx-wordmark.png',
+    brandWordmarkPath: 'brand/app-logo.png',
     showBrandName: false,
     routeBase: '/h5/',
     routerBasename: '/h5',

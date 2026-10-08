@@ -287,12 +287,17 @@ html:has(.home-page) { @include hide-scrollbar; }
             pointer-events: none;
         }
     }
-    &__footer-brand { width: 238px; height: 52px; margin: 0 auto; object-fit: fill; }
+    &__footer-brand { width: 238px; height: 238px; margin: 0 auto; object-fit: contain; }
     &__tagline { min-height: 34px; margin-top: 20px; color: var(--app-text-muted); }
-    &__contacts { display: grid; grid-template-columns: minmax(0, 1fr) 200px; column-gap: 30px; margin-top: 60px; }
-    &__links { display: flex; flex-direction: column; align-items: flex-start; gap: 40px; min-width: 0; padding-top: 10px; }
-    &__link-heading { min-height: 34px; font-weight: 400; }
-    &__link { display: block; margin-top: 12px; color: var(--app-color); line-height: 33.599998474121094px; text-decoration: underline; overflow-wrap: anywhere; }
+    &__social-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px; margin-top: 60px; }
+    &__debox, &__telegram {
+        display: inline-flex;
+        flex: none;
+        border-radius: 999px;
+        img { width: 159px; height: 60px; object-fit: contain; }
+        &:focus-visible { outline: 2px solid var(--app-color); outline-offset: 4px; }
+    }
+    &__telegram img { width: 191px; }
     &__twitter {
         display: inline-flex;
         align-items: center;
@@ -306,7 +311,6 @@ html:has(.home-page) { @include hide-scrollbar; }
     }
     &__twitter-icon { flex: none; width: 48px; height: 48px; border-radius: 999px; background: var(--app-btn-color); img { width: 100%; height: 100%; } }
     &__twitter-text { width: 81px; font-size: 24px; font-weight: 600; line-height: 33.599998474121094px; letter-spacing: 0; }
-    &__qr { width: 200px; height: 200px; border-radius: 20px; background: #FFFFFF; img { width: 168px; height: 168px; } }
 
     &--translated {
         .home-page__limited-align { padding-left: 0; }

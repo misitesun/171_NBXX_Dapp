@@ -232,17 +232,19 @@ export function HomePage({ config = HOME_PAGE_CONFIG, purchasing = false, purcha
                 <div className="home-page__partners" aria-label={t('home.mediaTitle')} style={{ '--media-scroll-duration': `${config.mediaScrollDurationSeconds}s` } as CSSProperties}><PartnerRow start={0} /><PartnerRow start={10} /></div>
             </section>
             <footer className="home-page__footer">
-                <img className="home-page__footer-brand" src={`${APP_CONFIG.routeBase}${APP_CONFIG.brandWordmarkPath}`} alt={APP_CONFIG.name || 'NodeXX'} loading="lazy" />
+                <img className="home-page__footer-brand" src={`${APP_CONFIG.routeBase}${APP_CONFIG.brandWordmarkPath}`} alt={APP_CONFIG.name || 'NBXX'} loading="lazy" />
                 <p className="home-page__tagline tc size-24">{t('home.tagline')}</p>
-                <div className="home-page__contacts">
-                    <div className="home-page__links">
-                        <div><h3 className="home-page__link-heading size-24">{t('home.websiteLabel')}</h3><a className="home-page__link size-24" href={config.links.website} target="_blank" rel="noopener noreferrer">{config.links.website}</a></div>
-                        <a className="home-page__twitter" href={config.links.social} target="_blank" rel="noopener noreferrer" aria-label={t('home.twitterLabel')}>
-                            <span className="home-page__twitter-icon"><img src={HOME_ART.twitterIcon} alt="" /></span>
-                            <span className="home-page__twitter-text">{t('home.twitter')}</span>
-                        </a>
-                    </div>
-                    <div className="home-page__qr flex items-center justify-center"><img src={HOME_ART.communityQr} alt={t('home.communityQr')} loading="lazy" /></div>
+                <div className="home-page__social-links">
+                    <a className="home-page__twitter" href={config.links.social} target="_blank" rel="noopener noreferrer" aria-label={t('home.twitterLabel')}>
+                        <span className="home-page__twitter-icon"><img src={HOME_ART.twitterIcon} alt="" /></span>
+                        <span className="home-page__twitter-text">{t('home.twitter')}</span>
+                    </a>
+                    <a className="home-page__telegram" href={config.links.telegram} target="_blank" rel="noopener noreferrer" aria-label={t('home.telegramLabel')}>
+                        <img src={HOME_ART.telegramLink} alt="Telegram" loading="lazy" />
+                    </a>
+                    <a className="home-page__debox" href={config.links.debox} target="_blank" rel="noopener noreferrer" aria-label={t('home.deboxLabel')}>
+                        <img src={HOME_ART.deboxLink} alt="DeBox" loading="lazy" />
+                    </a>
                 </div>
             </footer>
             <Toast message={message} variant={variant} />

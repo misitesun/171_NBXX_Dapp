@@ -1,4 +1,4 @@
-# NodeXX 首页
+# NBXX 首页
 
 依据 Figma NVwAAv12WZx1LiCTqPMNWD / 30192:718 实现静态首页。完整量测、资源来源和验收记录位于 docs/design/home/implementation-checklist.md。
 
@@ -26,6 +26,8 @@ NFT卡片背景、勾选标记、权益栏背景及高亮文案由同一个选�
 
 ## 推特入口
 
+2026-10-06 按开发者提供的金牛 NBXX 图片替换页脚品牌，采用238×238px（750px基准）正方形容器和 `object-fit: contain` 保持原图比例。此尺寸为新资源适配值，不属于原Figma横向字标量测。
+
 页脚 Twitter 胶囊入口沿用 `config.links.social`，原稿 SVG 图标保存在 `src/assets/home/twitter-icon.svg`。品牌名称保留 Twitter，可访问名称支持五种语言。详细量测见 `docs/design/home/twitter-update.md`。
 
 ## 团队与邀请
@@ -43,3 +45,11 @@ NFT卡片背景、勾选标记、权益栏背景及高亮文案由同一个选�
 `teamScrollPagination.ts` 仅观察成员框自身滚动，IntersectionObserver 的 root 为该容器；不支持观察器时仍使用容器 scroll 事件与实际滚动距离。注册时不根据历史滚动位置加载，每次请求后需再次滚动才能继续；第一页加载、加载下一页、读取失败、末页及购买期间关闭自动分页。刷新第一页时滚动位置回到顶部。`onLoadMore` 返回实际请求 Promise，由数据层报告请求错误并维持页码，框内按钮可手动重试。内部已滚动时隔离 touchstart，避免外层页面下拉刷新误接管手势。
 
 回归：`pnpm exec node --test tests/team-scroll-pagination.test.mjs tests/home-page.test.mjs`；浏览器本地 fixture 见 `tests/nbxx-home-harness.html`，不代表真实钱包/API 验收。
+
+2026-10-08 项目展示名称统一为NBXX，五种语言文案同步更新；推特入口 `config.links.social` 更新为开发者提供的 `https://x.com/bnxxapk?s=11`，保留查询参数。
+
+2026-10-08 页脚新增DeBox入口，使用开发者导出的159×60 PNG（src/assets/home/debox-link.png）原尺寸接入px-to-vw，完整胶囊图与Twitter并排；Flex允许窄屏换行，间距10px为页面适配值。链接由config.links.debox维护，新标签打开并保留id/code参数，五种语言提供可访问名称。官网和二维码保持原内容。
+
+2026-10-08 页脚二维码替换为开发者新下载的200×200 PNG（Frame 2147236751.png，中央Telegram标识），保存为src/assets/home/community-qr.png；保留现有二维码容器与显示尺寸，原图不做裁剪或重绘。
+
+2026-10-08 按开发者新要求移除页脚官网标题/链接和二维码展示，改为Twitter、Telegram、DeBox居中排列，Flex可换行。Telegram使用开发者导出的191×60 PNG（telegram-link.png），链接config.links.telegram为https://t.co/plo9EMr0ak，新标签打开；20px间距为页面适配值。此记录取代前述官网与二维码保留说明。

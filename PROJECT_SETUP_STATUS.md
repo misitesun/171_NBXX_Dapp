@@ -1,12 +1,12 @@
 # Project setup status
 # 项目初始化状态
 
-初始化默认配置与展示名称已确认并回填。Logo 和 Empty 资源已由开发者明确跳过，保留生产前补齐项。2026-09-28 开发者授权直接开展首页静态页面开发。
+初始化默认配置与展示名称已确认并回填。Logo 已补齐，Empty 资源仍保留生产前补齐项。2026-09-28 开发者授权直接开展首页静态页面开发。
 
 ## Confirmed
 ## 已确认
 
-- Project display name / 项目展示名称：`NodeXX`，用于浏览器标题和应用文案。
+- Project display name / 项目展示名称：`NBXX`，2026-10-08 开发者确认更名，用于浏览器标题和应用文案。
 - Route base / 部署目录：`/h5/`。
 - Home route / 首页路由：`/home`。
 - Layout menu / 导航模式：`sidebar`；开发者后续要求关闭侧栏图标，`sidebarMenuEnabled=false`，暂不显示入口及侧栏。
@@ -24,7 +24,7 @@ The package name remains fixed as `@jcy/template-react`. These confirmed default
 ## Skipped items and follow-up
 ## 已跳过项与补齐阶段
 
-- Project initialization logo / 项目初始化 Logo：开发者确认早期开发先跳过。正方形 PNG Logo 和由它生成的 favicon 在正式生产构建前补齐；`public/brand/brand-status.json` 的 `isProjectLogoReady` 保持 `false`，生产构建门禁继续生效。首页设计稿的横向 NodeXX 字标已下载，可用于对应页面图层，但不视为初始化 Logo 已就绪。
+- Project initialization logo / 项目初始化 Logo：2026-10-06 开发者提供500×500透明PNG金牛 NBXX Logo，替换 `public/brand/app-logo.png`，顶部、登录页及页脚统一引用并按正方形等比显示；已通过 `pnpm favicon:generate` 生成favicon，`isProjectLogoReady=true`。2026-10-08 展示名称更新为NBXX。
 - Empty-state icon / Empty 空状态图标：开发者确认早期开发先跳过，通用 Empty 组件继续使用模板占位资源；项目专属 PNG 图标准备好后，通过 `pnpm empty:asset -- --input <empty-icon.png>` 更新，并在正式页面验收前补齐。
 
 ## 当前开发阶段
